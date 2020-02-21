@@ -18,6 +18,14 @@ print s
 In order to run the code on the terminal, go to the correct directory and run **python test.py**  
 This will result in the following code being printed out on the terminal:  
 `Hello World`  
-`Hello Again`
+`Hello Again`  
+
+We do not need to specify a type when declaring variables so a variable can contain anything including ints, doubles, strings, booleans, and etc. No need to end lines with **;** just write code normally:  
+```python
+s = "Hello Again"
+num = 12
+answer = True
+```
+
 
 
