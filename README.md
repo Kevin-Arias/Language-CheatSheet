@@ -32,6 +32,17 @@ Let us look at Strings in particular and see some useful functions we can use on
 phrase = "Hi"
 len(phrase)    #Should return 2
 ```  
+- indexing a string: can index a string using brackets [] (is 0-indexed)  
+```python
+phrase = "test"
+phrase[0]    #Returns 't'
+```  
+- `.index()` : returns index of where character or string is first located  
+```python
+phrase = "Hello World"
+phrase.index("e")    #Returns 1
+phrase.index("World")    #Returns 6
+```  
 
 
 
