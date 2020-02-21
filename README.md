@@ -48,5 +48,6 @@ phrase.index("World")    # Returns 6
 phrase = "Hello World"
 phrase.replace("World", "Universe")    # phrase is now "Hello Universe"
 ```  
+- [More String Functions](https://www.w3schools.com/python/python_ref_string.asp)
 
 
