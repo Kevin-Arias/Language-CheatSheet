@@ -25,7 +25,15 @@ We do not need to specify a type when declaring variables so a variable can cont
 s = "Hello Again"
 num = 12
 answer = True
-```
+```  
+Let us look at Strings in particular and see some useful functions we can use on strings:  
+- `len` : allows us to find length of string  
+```python
+phrase = "Hi"
+len(phrase)
+
+(Should return 2)
+```  
 
 
 
