@@ -56,3 +56,24 @@ phrase.replace("World", "Universe")    # phrase is now "Hello Universe"
 ```python
 my_num = 5
 phrase = str(my_num)    # phrase should now contain '5'
+```  
+- `abs()` : finds absolute value of number
+```python
+my_num = -3
+print(abs(my_num))    # prints 3
+```  
+- `pow(num, exponent)` : allows you to calculate num to the power of exponent
+```python
+my_num = 5
+print(pow(my_num, 2))    # prints 25
+```  
+- `max(num1, num2)` : returns larger value
+```python
+print(max(4,6))    # returns 6
+```  
+- `min(num1, num2)` : returns smaller value
+```python
+print(min(4,6))    # returns 4
+```  
+- `from math import *` : allows us to use even more functions such as floor(), ceil(), and sqrt()
+
