@@ -48,6 +48,9 @@ phrase.index("World")    # Returns 6
 phrase = "Hello World"
 phrase.replace("World", "Universe")    # phrase is now "Hello Universe"
 ```  
-- [More String Functions](https://www.w3schools.com/python/python_ref_string.asp)
-
-
+- [More String Functions](https://www.w3schools.com/python/python_ref_string.asp)  
+**Numbers**: Some useful concepts and functions for number types 
+- `str()` : allows you to convert number type to string
+```python
+my_num = 5
+phrase = str(my_num)    # phrase should now contain '5'
