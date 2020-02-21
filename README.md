@@ -6,6 +6,22 @@ These are some basic tips and concepts to refresh your memory on some of softwar
 ## PYTHON
 - [Basic Python](#basic-python) : Learn basic python concepts and formatting
 
+fdsa
+fdsa
+fdsa
+fdsa
+fdsa
+fdas
+fdsa
+fdsa
+fd
+afds
+afdsa
+fdsa
+fdsaf
+dsa
+
+
 ### Basic Python
 This is where you learn basic python
 
