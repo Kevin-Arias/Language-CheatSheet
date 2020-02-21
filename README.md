@@ -30,19 +30,23 @@ Let us look at Strings in particular and see some useful functions we can use on
 - `len` : allows us to find length of string  
 ```python
 phrase = "Hi"
-len(phrase)    #Should return 2
+len(phrase)    # Should return 2
 ```  
 - indexing a string: can index a string using brackets [] (is 0-indexed)  
 ```python
 phrase = "test"
-phrase[0]    #Returns 't'
+phrase[0]    # Returns 't'
 ```  
 - `.index()` : returns index of where character or string is first located  
 ```python
 phrase = "Hello World"
-phrase.index("e")    #Returns 1
-phrase.index("World")    #Returns 6
+phrase.index("e")    # Returns 1
+phrase.index("World")    # Returns 6
 ```  
-
+- `.replace(old_value, new_value)` : replaces old value with new value within string  
+```python
+phrase = "Hello World"
+phrase.replace("World", "Universe")    # phrase is now "Hello Universe"
+```  
 
 
