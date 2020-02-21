@@ -26,7 +26,7 @@ s = "Hello Again"
 num = 12
 answer = True
 ```  
-Let us look at Strings in particular and see some useful functions we can use on strings:  
+**Strings**: Let us look at Strings in particular and see some useful functions we can use on strings:  
 - `len` : allows us to find length of string  
 ```python
 phrase = "Hi"
