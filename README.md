@@ -26,7 +26,8 @@ s = "Hello Again"
 num = 12
 answer = True
 ```  
-Types can include: bool, int, long, float, str, tuple, list, dict
+Types can include: bool, int, long, float, str, tuple, list, dict  
+
 **Strings**: Let us look at Strings in particular and see some useful functions we can use on strings:  
 - `len` : allows us to find length of string  
 ```python
@@ -54,8 +55,8 @@ phrase.replace("World", "Universe")    # phrase is now "Hello Universe"
 int("6")    # converts "6" to 6
 ```  
 - [More String Functions](https://www.w3schools.com/python/python_ref_string.asp)  
-
-
+  
+  
 **Numbers**: Some useful concepts and functions for number types 
 - `str()` : allows you to convert number type to string
 ```python
@@ -81,7 +82,7 @@ print(max(4,6))    # returns 6
 print(min(4,6))    # returns 4
 ```  
 - `from math import *` : allows us to use even more functions such as floor(), ceil(), and sqrt()  
-
+  
 **User Input**: How to get and use user input from terminal
 - `input()` : allows us to have user input information  
 ```python
