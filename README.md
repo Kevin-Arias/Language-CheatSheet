@@ -43,7 +43,7 @@ phrase = "Hello World"
 phrase.index("e")    # Returns 1
 phrase.index("World")    # Returns 6
 ```  
-- `.replace(old_value, new_value)` : replaces old value with new value within string  
+- `.replace(old_value, new_value)` : replaces every instance of old_value with new_value within string  
 ```python
 phrase = "Hello World"
 phrase.replace("World", "Universe")    # phrase is now "Hello Universe"
