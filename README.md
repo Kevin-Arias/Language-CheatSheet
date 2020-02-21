@@ -16,7 +16,7 @@ s = "Hello Again"
 print s
 ```
 In order to run the code on the terminal, go to the correct directory and run **python test.py**  
-This will result in the following code being printed out on the terminal:
+This will result in the following code being printed out on the terminal:  
 `Hello World`  
 `Hello Again`
 
