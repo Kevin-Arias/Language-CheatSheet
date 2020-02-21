@@ -7,11 +7,16 @@ These are some basic tips and concepts to refresh your memory on some of softwar
 - [Basic Python](#basic-python) : Learn basic Python concepts and formatting
 
 ### Basic Python
-This is a test
-
+All python files are saved ending in .py 
+For example, I can create a file called test.py with the following code:
 ```python
-s = "Python syntax highlighting"
+print('Hellow World')
+s = "Hello Again"
 print s
 ```
+In order to run the code on the terminal, go to the correct directory and run **python test.py**
+This will result in the following code being printed out on the terminal:
+'Hello World'
+'Hello Again
 
 
