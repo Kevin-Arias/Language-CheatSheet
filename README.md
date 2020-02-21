@@ -8,6 +8,9 @@ These are some basic tips and concepts to refresh your memory on some of softwar
 
 ### Basic Python
 
-
+```python
+s = "Python syntax highlighting"
+print s
+```
 
 
