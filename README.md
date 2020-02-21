@@ -90,4 +90,13 @@ name = input("Enter your name: ")    # stores users input in name
 print("Hello " + name + "!")
 ```  
 
+**Lists**: Allow you to keep list of information that can be accessed easily
+```python
+foods = ['ham', 'eggs', 'beans', 'turkey', 'candy', 'apples']    # Declares a list
+print(foods[0])    # Prints ham
+print(foods[-1])    # Prints apples
+print(foods[1:])    # Prints 'eggs', 'beans', 'turkey', 'candy', 'apples'
+print(foods[1:3])    # Prints eggs, beans (includes 1 index and everything up to but not including 3)
+```
+
 
