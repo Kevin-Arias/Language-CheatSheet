@@ -30,9 +30,7 @@ Let us look at Strings in particular and see some useful functions we can use on
 - `len` : allows us to find length of string  
 ```python
 phrase = "Hi"
-len(phrase)
-
-(Should return 2)
+len(phrase)    #Should return 2
 ```  
 
 
