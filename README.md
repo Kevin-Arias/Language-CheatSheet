@@ -20,13 +20,13 @@ This will result in the following code being printed out on the terminal:
 `Hello World`  
 `Hello Again`  
 
-We do not need to specify a type when declaring variables so a variable can contain anything including ints, doubles, strings, booleans, and etc. No need to end lines with **;** just write code normally:  
+We do not need to specify a type when declaring variables so a variable can contain anything including ints, floats, strings, booleans, and etc. No need to end lines with **;** just write code normally:  
 ```python
 s = "Hello Again"
 num = 12
 answer = True
 ```  
-Types can include: bool, int, long, float, str, tuple, list, dict  
+Types can include: **bool, int, long, float, str, tuple, list, dict**  
 
 **Strings**: Let us look at Strings in particular and see some useful functions we can use on strings:  
 - `len` : allows us to find length of string  
