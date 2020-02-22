@@ -273,8 +273,22 @@ myItalianChef.make_Special()    # Prints 'Making Pasta'
 **Lists**: 
 - Most widely used data structure
 - Grow and shrink size as needed
-- Sequence typr
-- Sortable
+- Sequence type
+- Sortable  
+| Operation       | Big O Efficiency         
+| --------------- |:-------------:|
+| index(item)     | O(1)          |
+| store l[i]      | O(1)          |
+| len(l)          | O(1)          |
+| append(item)    | O(1)          |
+| pop()           | O(1)          |
+| pop(i)          | O(n)          |
+| insert(i, item) | O(n)          |
+| remove(x)       | O(n)          |
+| contains        | O(n)          |
+| reverse()       | O(n)          |
+| sort()          | O(nlogn)      |
+
 ```python
 foods = ['ham', 'eggs', 'beans', 'turkey', 'candy', 'apples']    # Declares a list
 print(foods[0])    # Prints ham
@@ -308,14 +322,21 @@ numbers = [
  numbers[3][0]    # Returns 0
 ```  
 
-**Tuples**: Container that can store multiple values. Is immutable so cannot be changed after creation.  
+**Tuples**: 
+- Immutable (can't add/change
+- Useful for fixed data
+- Faster than lists
+- Sequnce Type
 ```python
 coordinates = (4,5)    # Use () instead of []
 coordinates[1]    # Returns 5
 coordinates = [(4,5), (1,2)]    # Can make list of tuples  
 ```  
 
-**Dictionary**: Python's version of MAP, stores key-value pairs. Keys must be unique.
+**Dictionary**: 
+- Key/Value Pairs
+- Associative array, like Java HashMap
+- Unordered
 ```python
 months = {
   "Jan":"January,
@@ -328,6 +349,12 @@ months = {
  months.get("Dec")    # Returns None
  months.get("Dec", "Not valid")    # Returns default value "Not Valid
  ```  
+ 
+ **Sets**
+ - Store non-duplicate items
+ - Very fast access vs Lists
+ - Math Set ops (union, intersect)
+ - Unordered
 
 
 
