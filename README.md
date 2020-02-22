@@ -154,6 +154,19 @@ for index in range(5):
 for index in range(2,5):
   print(index)    # Prints 2,3,4
 ```  
+Users can also do a nested for-loop:  
+```python  
+numbers = [
+  [1,2,3],
+  [4,5,6],
+  [7,8,9],
+  [0]
+ ]
+ for row in numbers:
+  for col in row:
+    print(col)
+ ```  
+ 
 ### Python Data Structures
 **Lists**: Allow you to keep list of information that can be accessed easily
 ```python
@@ -175,6 +188,18 @@ foods.count('ham')    # Returns 1
 foods.sort()    # Sorts list in alphabetical / numerical order
 numbers.reverse()     # Reverses numbers
 more_foods = foods.copy()    # more_foods copies foods
+```  
+We can also create multi-dimensional lists and access them easily:  
+```python
+numbers = [
+  [1,2,3],
+  [4,5,6],
+  [7,8,9],
+  [0]
+ ]
+ numbers[0][0]    # Returns 1
+ numbers[3]       # Returns [0]
+ numbers[3][0]    # Returns 0
 ```  
 
 **Tuples**: Container that can store multiple values. Is immutable so cannot be changed after creation.  
