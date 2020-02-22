@@ -151,8 +151,23 @@ more_foods = foods.copy()    # more_foods copies foods
 ```python
 coordinates = (4,5)    # Use () instead of []
 coordinates[1]    # Returns 5
-coordinates = [(4,5), (1,2)]    # Can make list of tuples
+coordinates = [(4,5), (1,2)]    # Can make list of tuples  
+```  
 
+**Dictionary**: Python's version of MAP, stores key-value pairs. Keys must be unique.
+```python
+months = {
+  "Jan":"January,
+  "Feb":"February,
+  "March":"March",
+ }
+ 
+ months["Jan"]    # Returns "January"
+ months.get("Jan")    # Returns "January"
+ months.get("Dec")    # Returns None
+ months.get("Dec", "Not valid")    # Returns default value "Not Valid
+ ```  
+ 
 
 
 
