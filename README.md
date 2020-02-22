@@ -91,7 +91,7 @@ name = input("Enter your name: ")    # stores users input in name
 print("Hello " + name + "!")
 ```  
 
-###Python Data Structures
+### Python Data Structures
 **Lists**: Allow you to keep list of information that can be accessed easily
 ```python
 foods = ['ham', 'eggs', 'beans', 'turkey', 'candy', 'apples']    # Declares a list
