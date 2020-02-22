@@ -58,7 +58,17 @@ int("6")    # converts "6" to 6
 - [More String Functions](https://www.w3schools.com/python/python_ref_string.asp)  
   
   
-**Numbers**: Some useful concepts and functions for number types 
+**Numbers**: Some useful concepts and functions for number types (including ints and floats)  
+- Math operations:  
+```python
+1 + 2    # Returns 4
+1 - 2    # Returns -1
+2 * 3    # Returns 6
+2 ** 3   # Returns 8
+5 / 2    # Returns 2.5
+5 // 2   # Returns 2
+```  
+
 - `str()` : allows you to convert number type to string
 ```python
 my_num = 5
