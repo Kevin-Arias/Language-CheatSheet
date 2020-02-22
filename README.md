@@ -197,7 +197,7 @@ months = {
  months.get("Dec")    # Returns None
  months.get("Dec", "Not valid")    # Returns default value "Not Valid
  ```  
- 
+ Kevin is cool
 
 
 
