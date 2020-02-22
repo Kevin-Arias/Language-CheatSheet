@@ -114,13 +114,6 @@ elif not is_false"
 else:
   print('Skipped')
 ```  
-**While Loops**: Loops while condition is met  
-```python
-i = 1
-while i <= 10:    # Prints i 10 times 
-  print(i)
-  i += 1
-```  
 
 **Compare Statements**: Allows users to compare values. Comparisons include **>, <, >=, <=, ==, != **  
 ```python
@@ -132,6 +125,25 @@ s = "test"
 s == 'test'    # Returns True
 ```  
 
+**While Loops**: Loops while condition is met  
+```python
+i = 1
+while i <= 10:    # Prints i 10 times 
+  print(i)
+  i += 1
+```  
+**For Loops**: Loops over collection of items  
+```python
+colors = ["Red", "Blue", "Green"]
+for color in colors:
+  print(colors)    # Prints all of the colors
+
+for index in range(5):
+  print(index)    # Prints 0,1,2,3,4
+  
+for index in range(2,5):
+  print(index)    # Prints 2,3,4
+```  
 ### Python Data Structures
 **Lists**: Allow you to keep list of information that can be accessed easily
 ```python
