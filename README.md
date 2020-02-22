@@ -289,6 +289,20 @@ myItalianChef.make_Special()    # Prints 'Making Pasta'
 | reverse()       | O(n)             |
 | sort()          | O(nlogn)         |
 
+Operation | Big O Efficiency
+--- | --- 
+index(item)     | O(1)             
+store l[i]      | O(1)             
+len(l)          | O(1)             
+append(item)    | O(1)             
+pop()           | O(1)             
+pop(i)          | O(n)             
+insert(i, item) | O(n)             
+remove(x)       | O(n)             
+contains        | O(n)            
+reverse()       | O(n)             
+sort()          | O(nlogn)         
+
 ```python
 foods = ['ham', 'eggs', 'beans', 'turkey', 'candy', 'apples']    # Declares a list
 print(foods[0])    # Prints ham
