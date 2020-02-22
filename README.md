@@ -276,19 +276,7 @@ myItalianChef.make_Special()    # Prints 'Making Pasta'
 - Sequence type
 - Sortable  
 
-Operation | Big O Efficiency
---- | --- 
-index(item)     | O(1)             
-store l[i]      | O(1)             
-len(l)          | O(1)             
-append(item)    | O(1)             
-pop()           | O(1)             
-pop(i)          | O(n)             
-insert(i, item) | O(n)             
-remove(x)       | O(n)             
-contains        | O(n)            
-reverse()       | O(n)             
-sort()          | O(nlogn)         
+<img width="644" alt="list" src="https://user-images.githubusercontent.com/16792195/75100362-6f059380-5581-11ea-9cd6-bb05c265f288.png">     
 
 ```python
 foods = ['ham', 'eggs', 'beans', 'turkey', 'candy', 'apples']    # Declares a list
