@@ -7,6 +7,9 @@ These are some basic tips and concepts to refresh your memory on some of softwar
 - [Basic Python](#basic-python) : Learn basic Python concepts and syntax
 - [Python Data Structures](#python-data-structures) : Different kinds of data structures that can be used in Python
 
+## JAVA
+- [Basic Java](#basic-java) : Learn basic Java concepts and syntax
+
 ### Basic Python
 All python files are saved ending in .py 
 
@@ -353,7 +356,8 @@ months = {
  ```python
  set = {1,2,3,4,1}    # Set is {1,2,3,4}
  ```  
- 
+ ## JAVA
+ ### Basic Java
 
 
 
