@@ -91,6 +91,14 @@ name = input("Enter your name: ")    # stores users input in name
 print("Hello " + name + "!")
 ```  
 
+**Functions**: Allow programmers to create methods that can perform tasks and manipulate input
+```python  
+def say_hi(name, age):
+  print("Hello " + name + " you are " + str(age) + " years old.")
+  
+say_hi("Kevin", 22)    # This function prints 'Hello Kevin you are 22 years old.'
+```
+
 ### Python Data Structures
 **Lists**: Allow you to keep list of information that can be accessed easily
 ```python
@@ -112,6 +120,14 @@ foods.count('ham')    # Returns 1
 foods.sort()    # Sorts list in alphabetical / numerical order
 numbers.reverse()     # Reverses numbers
 more_foods = foods.copy()    # more_foods copies foods
-```
+```  
+
+**Tuples**: Container that can store multiple values. Is immutable so cannot be changed after creation.  
+```python
+coordinates = (4,5)    # Use () instead of []
+coordinates[1]    # Returns 5
+coordinates = [(4,5), (1,2)]    # Can make list of tuples
+
+
 
 
