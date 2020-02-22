@@ -325,8 +325,9 @@ coordinates = [(4,5), (1,2)]    # Can make list of tuples
 **Dictionary**: 
 - Key/Value Pairs
 - Associative array, like Java HashMap
-- Unordered
-<img width="644"alt="dict"src="https://user-images.githubusercontent.com/16792195/75100465-8db85a00-5582-11ea-99fc-7e930c5bd1bd.png">  
+- Unordered  
+
+<img width="644" alt="dict" src="https://user-images.githubusercontent.com/16792195/75100465-8db85a00-5582-11ea-99fc-7e930c5bd1bd.png"><br/>  
 ```python
 months = {
   "Jan":"January,
