@@ -91,7 +91,7 @@ name = input("Enter your name: ")    # stores users input in name
 print("Hello " + name + "!")
 ```  
 
-**Functions**: Allow programmers to create methods that can perform tasks and manipulate input. Indentation is **important**!
+**Functions**: Allow users to create methods that can perform tasks and manipulate input. Indentation is important!
 ```python  
 def say_hi(name, age):
   print("Hello " + name + " you are " + str(age) + " years old.")
