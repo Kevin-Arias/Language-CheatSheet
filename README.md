@@ -91,13 +91,38 @@ name = input("Enter your name: ")    # stores users input in name
 print("Hello " + name + "!")
 ```  
 
-**Functions**: Allow programmers to create methods that can perform tasks and manipulate input
+**Functions**: Allow programmers to create methods that can perform tasks and manipulate input. Indentation is **important**!
 ```python  
 def say_hi(name, age):
   print("Hello " + name + " you are " + str(age) + " years old.")
+  return None    # Python's way of saying null
   
 say_hi("Kevin", 22)    # This function prints 'Hello Kevin you are 22 years old.'
-```
+```  
+**Conditional Statements**: Allows conditions to be made in code
+```python
+is_true = True
+is_false = False
+if is_True:
+  print('Success')
+ elif is_true and is_false:
+  print('Skipped')
+elif is_true or is_false:
+  print('Success')
+elif not is_false"
+  print('Success')
+else:
+  print('Skipped')
+```  
+**Compare Statements**: Allows users to compare values. Comparisons include **>, <, >=, <=, ==, != **  
+```python
+2>1    # Returns True
+1<=1    # Returns True
+1!=2    # Returns True
+
+s = "test"
+s == 'test'    # Returns True
+```  
 
 ### Python Data Structures
 **Lists**: Allow you to keep list of information that can be accessed easily
