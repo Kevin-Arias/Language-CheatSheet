@@ -9,6 +9,7 @@ These are some basic tips and concepts to refresh your memory on some of softwar
 
 ## JAVA
 - [Basic Java](#basic-java) : Learn basic Java concepts and syntax
+- [Java Data Types](#java-data-types) : Learn data types you can cast with Java
 
 ### Basic Python
 All python files are saved ending in .py 
@@ -383,10 +384,20 @@ public class MyClass {
   }
 }
 ```  
-Every line of code ends with a semicolon **;** and instead of : we use { to begin a clause.
+Every line of code ends with a semicolon **;** and instead of : we use { to begin a clause.  
+The name if the java file **MUST MATCH** the class name!  
+Every java file must contain the `main()` method:  
+```java
+public static void main(String[] args)
+```  
+In order to perform a comment in java, we do the following:  
+```java
+// This is a comment
+System.out.println("Hello World");
 
+/* The code below will print the words Hello World
+to the screen, and it is amazing */
+System.out.println("Hello World");
 
-
-
-
-
+```  
+### Java Data Types
