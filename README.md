@@ -326,7 +326,7 @@ coordinates = [(4,5), (1,2)]    # Can make list of tuples
 - Key/Value Pairs
 - Associative array, like Java HashMap
 - Unordered
-<img width="644" alt="dict" src="https://user-images.githubusercontent.com/16792195/75100465-8db85a00-5582-11ea-99fc-7e930c5bd1bd.png">  
+<img width="644"alt="dict"src="https://user-images.githubusercontent.com/16792195/75100465-8db85a00-5582-11ea-99fc-7e930c5bd1bd.png">  
 ```python
 months = {
   "Jan":"January,
@@ -337,8 +337,9 @@ months = {
  months["Jan"]    # Returns "January"
  months.get("Jan")    # Returns "January"
  months.get("Dec")    # Returns None
- months.get("Dec", "Not valid")    # Returns default value "Not Valid
+ months.get("Dec", "Not valid")    # Returns default value "Not Valid"
  ```  
+
  
  **Sets**
  - Store non-duplicate items
