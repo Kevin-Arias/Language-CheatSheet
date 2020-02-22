@@ -348,7 +348,12 @@ months = {
  - Math Set ops (union, intersect)
  - Unordered  
  
- <img width="643" alt="sets" src="https://user-images.githubusercontent.com/16792195/75100452-737e7c00-5582-11ea-9046-8efbd59479cc.png">
+ <img width="643" alt="sets" src="https://user-images.githubusercontent.com/16792195/75100452-737e7c00-5582-11ea-9046-8efbd59479cc.png"><br/>  
+ 
+ ```python
+ set = {1,2,3,4,1}    # Set is {1,2,3,4}
+ ```  
+ 
 
 
 
