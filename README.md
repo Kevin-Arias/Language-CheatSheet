@@ -99,6 +99,11 @@ print(max(4,6))    # returns 6
 print(min(4,6))    # returns 4
 ```  
 - `from math import *` : allows us to use even more functions such as floor(), ceil(), and sqrt()  
+- `RANDOM` : allows you to select random int from range  
+```python
+import random
+def roll_dice(num):
+  return random.randint(1,num)   # Random from 1 to num-1
   
 **User Input**: How to get and use user input from terminal
 - `input()` : allows us to have user input information  
@@ -205,11 +210,65 @@ employee_file.readable()    # Returns True if readable
 employee_file.write("\nKevin - Programmer)    # Appends to the end of the file
 employee_file.close()    # Good practice to close files after using them
 
-employee_file = open("employees.txt", "w")    # Write
+employee_file = open("employees.txt", "w")    # Writes to file (if employees.txt does not exist, it creates file)
+                                              # Can create any file: .txt, .html, .css, etc.
 employee_file.readable()    # Returns True if readable
 employee_file.write("\nKevin - Programmer)    # Overwrites entire file and replaces it with write text
 employee_file.close()    # Good practice to close files after using them
+```  
+**Importing Other Files** : Import other files to get access to their variables and functions
+```python
+import useful_tools    # Do not need to include the .py for the file
+useful_tools.roll_dice(10)    # Use useful_tools methods
+```  
+
+**Classes and Objects** : How to create classes and objects and use them effectively
+- Let us create a `Student` class in a file called Student.py:  
+```python
+class Student:
+  def __init__(self, name, major, gpa):
+    self.name = name
+    self.major = major
+    self.gpa = gpa
+  def on_honor_roll(self):
+    if self.gpa >= 3.5:
+      return True
+     else:
+      return False
+```  
+- Now let's use this class in a new file called app.py:  
+```python
+from Student import Student    # From the Student file import Student class
+student1 = Student('Jim', 'Business', 3.8)    # Creates a Student object
+student2 = Student('Pam', 'Art', 2.5)
+student2.gpa    # Returns 2.5
+student1.on_honor_roll()    # Returns True
+```  
+**Inheritance**: We can inherit classes in order to not be repeating code across classes
+```python
+class Chef:
+  def make_chicken(self):
+    print("Making Chicken")
+  def make_special(self):
+    print("Making Burger")
+    
+-----------------------------
  
+from Chef import Chef
+class ItalianChef(Chef):
+ def make_special(self):
+   print("Making Pasta")
+
+-----------------------------
+
+from Chef import Chef
+from ItalianChef import ItalianChef
+myChef = Chef()
+myChef.make_special()           # Prints 'Making Burger'
+myItalianChef = ItalianChef()
+myItalianChef.make_Special()    # Prints 'Making Pasta'
+```
+
 ### Python Data Structures
 **Lists**: Allow you to keep list of information that can be accessed easily
 ```python
