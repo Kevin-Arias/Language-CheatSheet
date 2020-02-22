@@ -275,19 +275,6 @@ myItalianChef.make_Special()    # Prints 'Making Pasta'
 - Grow and shrink size as needed
 - Sequence type
 - Sortable  
-| Operation       | Big O Efficiency |         
-| --------------- |:----------------:|
-| index(item)     | O(1)             |
-| store l[i]      | O(1)             |
-| len(l)          | O(1)             |
-| append(item)    | O(1)             |
-| pop()           | O(1)             |
-| pop(i)          | O(n)             |
-| insert(i, item) | O(n)             |
-| remove(x)       | O(n)             |
-| contains        | O(n)             |
-| reverse()       | O(n)             |
-| sort()          | O(nlogn)         |
 
 Operation | Big O Efficiency
 --- | --- 
