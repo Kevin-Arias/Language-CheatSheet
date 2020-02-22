@@ -114,6 +114,14 @@ elif not is_false"
 else:
   print('Skipped')
 ```  
+**While Loops**: Loops while condition is met  
+```python
+i = 1
+while i <= 10:    # Prints i 10 times 
+  print(i)
+  i += 1
+```  
+
 **Compare Statements**: Allows users to compare values. Comparisons include **>, <, >=, <=, ==, != **  
 ```python
 2>1    # Returns True
