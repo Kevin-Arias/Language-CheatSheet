@@ -46,6 +46,12 @@ phrase = "Hello World"
 phrase.index("e")    # Returns 1
 phrase.index("World")    # Returns 6
 ```  
+- `.split(separator)` : splits string into a list. Default separator is any whitespace if none is specified
+```python
+phrase = "Hello World"
+phrase.split()    # Returns ['Hello', 'World'] 
+
+```  
 - `.replace(old_value, new_value)` : replaces every instance of old_value with new_value within string  
 ```python
 phrase = "Hello World"
@@ -184,7 +190,25 @@ except ValueError:
   print("Invalid Input")    # Exception will invalid input error  
  ```  
  
- - [List of Exceptions](https://www.programiz.com/python-programming/exceptions)
+ - [List of More Exceptions](https://www.programiz.com/python-programming/exceptions)  
+ 
+**Reading Files** How to read, write, and append to files using Python  
+```python  
+employee_file = open("employees.txt", "r")    # Make sure file is in correct directory
+employee_file.readable()    # Returns True if readable
+for employee in employee_file.readlines():
+  print(emplyee)
+employee_file.close()    # Good practice to close files after using them
+
+employee_file = open("employees.txt", "a")    # APPEND
+employee_file.readable()    # Returns True if readable
+employee_file.write("\nKevin - Programmer)    # Appends to the end of the file
+employee_file.close()    # Good practice to close files after using them
+
+employee_file = open("employees.txt", "w")    # Write
+employee_file.readable()    # Returns True if readable
+employee_file.write("\nKevin - Programmer)    # Overwrites entire file and replaces it with write text
+employee_file.close()    # Good practice to close files after using them
  
 ### Python Data Structures
 **Lists**: Allow you to keep list of information that can be accessed easily
