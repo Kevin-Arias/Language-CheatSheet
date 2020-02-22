@@ -166,6 +166,25 @@ numbers = [
   for col in row:
     print(col)
  ```  
+**Try-Excpet Blocks** Programs tries code and if error is thrown, we will have an instance for that situation.
+```python
+try:
+ number = int(input("Enter a number: "))    # What if someone inputs a string instead of a number?
+ print(number)
+except:
+ print("Invalid Input")    # Exception will catch every error
+  
+try:
+  value = 10 / 0
+  number = int(input("Enter a number: "))   
+  print(number)
+except ZeroDivisionError:
+  print("Invalid Input")    # Exception will catch zero division error 
+except ValueError:
+  print("Invalid Input")    # Exception will invalid input error  
+ ```  
+ 
+ - [List of Exceptions](https://www.programiz.com/python-programming/exceptions)
  
 ### Python Data Structures
 **Lists**: Allow you to keep list of information that can be accessed easily
