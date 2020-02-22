@@ -311,7 +311,7 @@ numbers = [
  numbers[3][0]    # Returns 0
 ```  
 
-**Tuples**: 
+**Tuples**: Support all operations that do not mutate the data structure (and have same complexity)
 - Immutable (can't add/change
 - Useful for fixed data
 - Faster than lists
