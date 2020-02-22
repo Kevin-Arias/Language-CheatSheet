@@ -390,7 +390,7 @@ Every java file must contain the `main()` method:
 ```java
 public static void main(String[] args)
 ```  
-In order to perform a comment in java, we do the following:  
+In order to perform a **comment** in java, we do the following:  
 ```java
 // This is a comment
 System.out.println("Hello World");
