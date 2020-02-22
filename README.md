@@ -5,7 +5,7 @@ These are some basic tips and concepts to refresh your memory on some of softwar
 
 ## PYTHON
 - [Basic Python](#basic-python) : Learn basic Python concepts and syntax
-- [Python Data Structures] (#python-data-structures) : Different kinds of data structures that can be used in Python
+- [Python Data Structures](#python-data-structures) : Different kinds of data structures that can be used in Python
 
 ### Basic Python
 All python files are saved ending in .py 
