@@ -270,7 +270,11 @@ myItalianChef.make_Special()    # Prints 'Making Pasta'
 ```
 
 ### Python Data Structures
-**Lists**: Allow you to keep list of information that can be accessed easily
+**Lists**: 
+- Most widely used data structure
+- Grow and shrink size as needed
+- Sequence typr
+- Sortable
 ```python
 foods = ['ham', 'eggs', 'beans', 'turkey', 'candy', 'apples']    # Declares a list
 print(foods[0])    # Prints ham
