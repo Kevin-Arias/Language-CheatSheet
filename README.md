@@ -5,6 +5,7 @@ These are some basic tips and concepts to refresh your memory on some of softwar
 
 ## PYTHON
 - [Basic Python](#basic-python) : Learn basic Python concepts and syntax
+- [Python Data Structures] (#python-data-structures) : Different kinds of data structures that can be used in Python
 
 ### Basic Python
 All python files are saved ending in .py 
@@ -90,6 +91,7 @@ name = input("Enter your name: ")    # stores users input in name
 print("Hello " + name + "!")
 ```  
 
+###Python Data Structures
 **Lists**: Allow you to keep list of information that can be accessed easily
 ```python
 foods = ['ham', 'eggs', 'beans', 'turkey', 'candy', 'apples']    # Declares a list
