@@ -97,6 +97,19 @@ print(foods[0])    # Prints ham
 print(foods[-1])    # Prints apples
 print(foods[1:])    # Prints 'eggs', 'beans', 'turkey', 'candy', 'apples'
 print(foods[1:3])    # Prints eggs, beans (includes 1 index and everything up to but not including 3)
+
+numbers = [5,3,4,1,2]
+foods.extend(numbers)    # foods becomes ['ham', 'eggs', 'beans', 'turkey', 'candy', 'apples',5,3,4,1,2]  
+foods.append('bread')    # foods becomes ['ham', 'eggs', 'beans', 'turkey', 'candy', 'apples', 'bread']  
+foods.insert(1, 'bread')    # foods becomes ['ham', 'bread', 'eggs', 'beans', 'turkey', 'candy', 'apples'] 
+foods.remove('ham')    # foods becomes ['eggs', 'beans', 'turkey', 'candy', 'apples'] 
+foods.clear()    #foods becomes []
+foods.pop()    # foods becomes ['ham', 'eggs', 'beans', 'turkey', 'candy']
+foods.index('eggs')    # Returns 1
+foods.count('ham')    # Returns 1
+foods.sort()    # Sorts list in alphabetical / numerical order
+numbers.reverse()     # Reverses numbers
+more_foods = foods.copy()    # more_foods copies foods
 ```
 
 
