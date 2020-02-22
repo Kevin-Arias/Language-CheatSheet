@@ -374,7 +374,17 @@ Java is used for:
 - Web servers and application servers
 - Games
 - Database connection
-- And much, much more!
+- And much, much more!  
+Every java file ends with .java such as for example `MyClass.java` :  
+```java
+public class MyClass {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}
+```  
+Every line of code ends with a semicolon **;** and instead of : we use { to begin a clause.
+
 
 
 
