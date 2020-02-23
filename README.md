@@ -440,7 +440,78 @@ Math.random();
 ```  
 - [List of more Java math methods](https://www.w3schools.com/java/java_ref_math.asp)  
 
-### Java Loops and Conditions
+### Java Loops and Conditions  
+Here are some conditional statements including if, else, and else if:  
+
+```java
+int time = 22;
+if (time < 10) {
+  System.out.println("Good morning.");
+} else if (time < 20) {
+  System.out.println("Good day.");
+} else {
+  System.out.println("Good evening.");
+}
+// Outputs "Good evening."
+
+//--------------------------------------
+int time = 20;
+if (time < 18) {
+  System.out.println("Good day.");
+} else {
+  System.out.println("Good evening.");
+}
+
+int time = 20;
+//variable = (condition) ? expressionTrue :  expressionFalse;
+String result = (time < 18) ? "Good day." : "Good evening.";     // Simpler way of describing same thing
+System.out.println(result);
+```  
+**Switch Statements** : Use if you want to select one of the many code blocks to be executed  
+```java
+int day = 4;
+switch (day) {
+  case 6:
+    System.out.println("Today is Saturday");
+    break;
+  case 7:
+    System.out.println("Today is Sunday");
+    break;
+  default:
+    System.out.println("Looking forward to the Weekend");
+}
+// Outputs "Looking forward to the Weekend"
+```  
+**While loops** While loops will continue to loop until condition is satisfied  
+```java  
+int i = 0;
+while (i < 5) {
+  System.out.println(i);
+  i++;
+}
+```  
+The **do/while** loop will always execute the code block once before checking if condition is true, then it will repeat the loop as long as the condition is true.  
+```java  
+int i = 0;
+do {
+  System.out.println(i);
+  i++;
+}
+while (i < 5);
+```  
+**For Loop** Loop through code a certain amount of times.  
+```java  
+for (int i = 0; i < 5; i++) {
+  System.out.println(i);
+}
+
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+for (String i : cars) {
+  System.out.println(i);
+}
+```  
+**Break and Continue** Break breaks out of the loop immediately. Continue breaks one iteration of the loop.  
+
 
 
 
