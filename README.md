@@ -540,7 +540,7 @@ Classes are simple to make and multiple classes can be used at a time (just need
 ```java
 //MyClass.java
 public class MyClass {
-  int x = 5;
+  final int x = 5;     //If you don't want the ability to override existing values, declare the attribute as final
 }
 
 //OtherClass.java
@@ -553,6 +553,73 @@ class OtherClass {
 
 //Just make sure to javac both files before using.
 ```  
+**STATIC AND NON-STATIC METHODS** A clear example of when and how to use static and non-static methods in program.  
+```java  
+public class MyClass {
+  // Static method
+  static void myStaticMethod() {
+    System.out.println("Static methods can be called without creating objects");
+  }
+
+  // Public method
+  public void myPublicMethod() {
+    System.out.println("Public methods must be called by creating objects");
+  }
+
+  // Main method
+  public static void main(String[] args) {
+    myStaticMethod(); // Call the static method
+    // myPublicMethod(); This would compile an error
+
+    MyClass myObj = new MyClass(); // Create an object of MyClass
+    myObj.myPublicMethod(); // Call the public method on the object
+  }
+}  
+```  
+**Constructors**  How to initialize an object with certain parameters.  
+```java  
+public class Car {
+  int modelYear;
+  String modelName;
+
+  public Car(int year, String name) {
+    modelYear = year;
+    modelName = name;
+  }
+
+  public static void main(String[] args) {
+    Car myCar = new Car(1969, "Mustang");
+    System.out.println(myCar.modelYear + " " + myCar.modelName);
+  }
+}
+
+// Outputs 1969 Mustang  
+```  
+**Inheritance** : To inherit from a class, use the `extends` keyword.  
+```java  
+class Vehicle {
+  protected String brand = "Ford";        // Vehicle attribute
+  public void honk() {                    // Vehicle method
+    System.out.println("Tuut, tuut!");
+  }
+}
+
+class Car extends Vehicle {
+  private String modelName = "Mustang";    // Car attribute
+  public static void main(String[] args) {
+
+    // Create a myCar object
+    Car myCar = new Car();
+
+    // Call the honk() method (from the Vehicle class) on the myCar object
+    myCar.honk();
+
+    // Display the value of the brand attribute (from the Vehicle class) and the value of the modelName from the Car class
+    System.out.println(myCar.brand + " " + myCar.modelName);
+  }
+}  
+```  
+
 
 
 
