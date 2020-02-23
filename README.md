@@ -698,7 +698,21 @@ Why use C++ :
 - C++ is portable and can be used to develop applications that can be adapted to multiple platforms.
 - C++ is fun and easy to learn!
 - As C++ is close to C# and Java, it makes it easy for programmers to switch to C++ or vice versa  
-C++ files are stored using the .cpp end tag. For example myfirstprogrma.cpp.
+C++ files are stored using the .cpp end tag. For example myfirstprogrma.cpp.  
+Let us look at a simple program and break it down:  
+```c++  
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World!";
+  return 0;
+}
+```  
+- `#include <iostream>` is a header file library that lets us work with input and output objects such as cout. Header files add functionality to C++ programs.  
+- `using namespace std` means that we can use names for objects and variables from the `standard` library.  
+- `int main()` is the main function needed to run the program.  
+- **EVERY** C++ statment ends with a semicolo **;**
 
 
 
