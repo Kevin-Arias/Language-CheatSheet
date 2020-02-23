@@ -688,8 +688,8 @@ public class Dog extends Animal {
 	}
 }  
 ```  
-
-### Basic C  
+## C++
+### Basic C ++  
   
 Why use C++ :  
 - C++ is one of the world's most popular programming languages.
