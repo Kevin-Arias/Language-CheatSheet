@@ -406,4 +406,11 @@ In order to **run** the program must type in the following:
 
 ### Java Data Types  
 <img width="809" alt="java_types" src="https://user-images.githubusercontent.com/16792195/75100839-12f23d80-5588-11ea-8225-9b9451028f8a.png">  
+```java  
+int myNum = 5;
+float myFloatNum = 5.99f;
+char myLetter = 'D';
+boolean myBool = true;
+String myText = "Hello";
+```
 
