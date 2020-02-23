@@ -619,6 +619,48 @@ class Car extends Vehicle {
   }
 }  
 ```  
+**SUPER and Proper Inheritance** : If want to inherit from class with constructor already, follow this example:  
+```java  
+// Animal.java
+public class Animal {
+	String name;
+	String type;
+	int age;
+	public Animal(String animal_name, String animal_type, int animal_age) {
+		name = animal_name;
+		type = animal_type;
+		age = animal_age;
+	}
+
+	public void shout() {
+		System.out.println("REEEEE");
+	}
+	public void cook() {
+		System.out.println("I am cooking");
+	}
+}
+
+//Dog.java
+public class Dog extends Animal {
+	
+	String yell;
+	public Dog(String name, String type, int age, String _yell){
+		super(name, type, age);    //sets up the Dog.name, Dog.type, and Dog.age
+		yell = _yell;
+	}
+	public void shout() {
+		System.out.println("WOOF");
+	}
+	public void say_name() {
+		System.out.println("My name is " + name + " and I love to " + yell);
+	}
+	public static void main(String[] args) {
+		Dog jeff = new Dog("Jeff", "Carnivore", 2, "ARGGGHHHH");
+		jeff.shout();
+		jeff.say_name();
+		jeff.cook();
+	}
+}
 
 
 
