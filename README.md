@@ -413,5 +413,8 @@ float myFloatNum = 5.99f;
 char myLetter = 'D';
 boolean myBool = true;
 String myText = "Hello";
-```
+```  
+<img width="686" alt="java_ops" src="https://user-images.githubusercontent.com/16792195/75101678-04f6e980-5595-11ea-822d-72850bc177a7.png"><br/>  
+
+
 
