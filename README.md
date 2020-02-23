@@ -14,7 +14,7 @@ These are some basic tips and concepts to refresh your memory on some of softwar
 - [Java Methods and Classes](#java-methods-and-classes) : Learn how to create methods and use classes and objects.  
 
 ## C++  
-- [Basic C++](#basic-c++) : Learn basic C++ concepts and syntax
+- [Basic C++](#basic-c) : Learn basic C++ concepts and syntax
 
 ### Basic Python
 All python files are saved ending in .py 
@@ -689,7 +689,7 @@ public class Dog extends Animal {
 }  
 ```  
 
-### Basic C++  
+### Basic C  
   
 Why use C++ :  
 - C++ is one of the world's most popular programming languages.
