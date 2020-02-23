@@ -11,6 +11,7 @@ These are some basic tips and concepts to refresh your memory on some of softwar
 - [Basic Java](#basic-java) : Learn basic Java concepts and syntax
 - [Java Data Types](#java-data-types) : Learn data types you can cast with Java
 - [Java Loops and Conditions](#java-loops-and-conditions) : Learn for and while loops, if/else statements, etc.
+- [Java Methods and Classes](#java-methods-and-classes) : Learn how to create methods and use classes and objects.
 
 ### Basic Python
 All python files are saved ending in .py 
@@ -511,6 +512,8 @@ for (String i : cars) {
 }
 ```  
 **Break and Continue** Break breaks out of the loop immediately. Continue breaks one iteration of the loop.  
+
+### Java Methods and Classes
 
 
 
