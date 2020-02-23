@@ -708,11 +708,33 @@ int main() {
   cout << "Hello World!";
   return 0;
 }
+
+/* This is a multi-
+line comment */
+
+//This is a single-line comment
 ```  
 - `#include <iostream>` is a header file library that lets us work with input and output objects such as cout. Header files add functionality to C++ programs.  
 - `using namespace std` means that we can use names for objects and variables from the `standard` library.  
 - `int main()` is the main function needed to run the program.  
-- **EVERY** C++ statment ends with a semicolo **;**
+- **EVERY** C++ statment ends with a semicolon **;**  
+- Comment can be `//` or `/*   */`  
+
+In C++, there are different **types** of variables including:  
+- `int` - stores integers (whole numbers), without decimals, such as 123 or -123
+- `double` - stores floating point numbers, with decimals, such as 19.99 or -19.99
+- `char` - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+- `string` - stores text, such as "Hello World". String values are surrounded by double quotes
+- `bool` - stores values with two states: true or false  
+```c++  
+int myNum = 5;               // Integer (whole number without decimals)
+double myFloatNum = 5.99;    // Floating point number (with decimals)
+char myLetter = 'D';         // Character
+string myText = "Hello";     // String (text)
+bool myBoolean = true;       // Boolean (true or false)
+```  
+
+
 
 
 
