@@ -400,4 +400,10 @@ to the screen, and it is amazing */
 System.out.println("Hello World");
 
 ```  
-### Java Data Types
+In order to **run** the program must type in the following:  
+- javac MyClass.java    (this will compile the code)
+- java MyClass          (this will run the code)  
+
+### Java Data Types  
+<img width="809" alt="java_types" src="https://user-images.githubusercontent.com/16792195/75100839-12f23d80-5588-11ea-8225-9b9451028f8a.png">  
+
