@@ -514,6 +514,45 @@ for (String i : cars) {
 **Break and Continue** Break breaks out of the loop immediately. Continue breaks one iteration of the loop.  
 
 ### Java Methods and Classes
+In order to define a mehtod, you need to define a return value (void, int, char, etc.), a name, and parameters:  
+```java  
+public class MyClass {
+  static int myMethod(int x, int y) {
+    return x + y;
+  }
+
+  public static void main(String[] args) {
+    int z = myMethod(5, 3);
+    System.out.println(z);
+  }
+}
+// Outputs 8 (5 + 3)
+```  
+In this example, `static` means that the method belongs to the MyClass class and not an object of the MyClass class.  
+**Classes**  
+
+Object-oriented programming has several advantages over procedural programming:
+- OOP is faster and easier to execute
+- OOP provides a clear structure for the programs
+- OOP helps to keep the Java code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug
+- OOP makes it possible to create full reusable applications with less code and shorter development time  
+Classes are simple to make and multiple classes can be used at a time (just need to make sure they are in the same directory)  
+```java
+//MyClass.java
+public class MyClass {
+  int x = 5;
+}
+
+//OtherClass.java
+class OtherClass {
+  public static void main(String[] args) {
+    MyClass myObj = new MyClass();
+    System.out.println(myObj.x);
+  }
+}
+
+//Just make sure to javac both files before using.
+```  
 
 
 
