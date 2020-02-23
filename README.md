@@ -10,6 +10,7 @@ These are some basic tips and concepts to refresh your memory on some of softwar
 ## JAVA
 - [Basic Java](#basic-java) : Learn basic Java concepts and syntax
 - [Java Data Types](#java-data-types) : Learn data types you can cast with Java
+- [Java Loops and Conditions](#java-loops-and-conditions) : Learn for and while loops, if/else statements, etc.
 
 ### Basic Python
 All python files are saved ending in .py 
@@ -438,6 +439,8 @@ Math.abs(-4.7);
 Math.random();
 ```  
 - [List of more Java math methods](https://www.w3schools.com/java/java_ref_math.asp)  
+
+### Java Loops and Conditions
 
 
 
