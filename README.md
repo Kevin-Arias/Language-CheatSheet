@@ -417,7 +417,29 @@ String myText = "Hello";
 <img width="686" alt="java_ops" src="https://user-images.githubusercontent.com/16792195/75101678-04f6e980-5595-11ea-822d-72850bc177a7.png"><br/>
 <img width="627" alt="java_simple" src="https://user-images.githubusercontent.com/16792195/75101710-cb72ae00-5595-11ea-9817-5641feddbaf1.png"><br/>
 <img width="584" alt="java_compare" src="https://user-images.githubusercontent.com/16792195/75101711-cca3db00-5595-11ea-9713-c7798c25c091.png"><br/>
-<img width="708" alt="java_logic" src="https://user-images.githubusercontent.com/16792195/75101712-cd3c7180-5595-11ea-9fc5-1ed4c8b98c9e.png"><br/>
+<img width="708" alt="java_logic" src="https://user-images.githubusercontent.com/16792195/75101712-cd3c7180-5595-11ea-9fc5-1ed4c8b98c9e.png"><br/>  
+**Strings**: Some useful String Methods  
+```java
+String txt = "Hello World";
+System.out.println(txt.toUpperCase());   // Outputs "HELLO WORLD"
+System.out.println(txt.toLowerCase());   // Outputs "hello world"
+
+String txt = "Please locate where 'locate' occurs!";
+System.out.println(txt.indexOf("locate")); // Outputs 7
+
+String txt = "It\'s alright.";
+```  
+**Math**: Couple of math methods users can use  
+```java  
+Math.max(5, 10);
+Math.min(5, 10);
+Math.sqrt(64);
+Math.abs(-4.7);
+Math.random();
+```  
+- [List of more Java math methods](https://www.w3schools.com/java/java_ref_math.asp)  
+
+
 
 
 
