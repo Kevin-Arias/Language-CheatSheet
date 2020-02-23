@@ -11,7 +11,10 @@ These are some basic tips and concepts to refresh your memory on some of softwar
 - [Basic Java](#basic-java) : Learn basic Java concepts and syntax
 - [Java Data Types](#java-data-types) : Learn data types you can cast with Java
 - [Java Loops and Conditions](#java-loops-and-conditions) : Learn for and while loops, if/else statements, etc.
-- [Java Methods and Classes](#java-methods-and-classes) : Learn how to create methods and use classes and objects.
+- [Java Methods and Classes](#java-methods-and-classes) : Learn how to create methods and use classes and objects.  
+
+## C++  
+- [Basic C++](#basic-c++) : Learn basic C++ concepts and syntax
 
 ### Basic Python
 All python files are saved ending in .py 
@@ -683,7 +686,19 @@ public class Dog extends Animal {
 		jeff.say_name();
 		jeff.cook();
 	}
-}
+}  
+```  
+
+### Basic C++  
+  
+Why use C++ :  
+- C++ is one of the world's most popular programming languages.
+- C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.
+- C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.
+- C++ is portable and can be used to develop applications that can be adapted to multiple platforms.
+- C++ is fun and easy to learn!
+- As C++ is close to C# and Java, it makes it easy for programmers to switch to C++ or vice versa  
+C++ files are stored using the .cpp end tag. For example myfirstprogrma.cpp.
 
 
 
