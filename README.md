@@ -513,6 +513,29 @@ for (String i : cars) {
 ```  
 **Break and Continue** Break breaks out of the loop immediately. Continue breaks one iteration of the loop.  
 
+**Try/Catch Clauses** Catches exceptions within a bracket of executed code  
+```java  
+import java.io.File;  // Import the File class
+import java.io.IOException;  // Import the IOException class to handle errors
+
+public class CreateFile {
+  public static void main(String[] args) {
+    try {
+      File myObj = new File("filename.txt");
+      if (myObj.createNewFile()) {
+        System.out.println("File created: " + myObj.getName());
+      } else {
+        System.out.println("File already exists.");
+      }
+    } catch (IOException e) {
+      System.out.println("An error occurred.");
+      e.printStackTrace();
+    }
+  }
+}
+```  
+
+
 ### Java Methods and Classes
 In order to define a mehtod, you need to define a return value (void, int, char, etc.), a name, and parameters:  
 ```java  
