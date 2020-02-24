@@ -872,5 +872,43 @@ string *mystring;
 string * mystring;
 ```  
 ### Methods and Classes  
+In C++, functions are evaluated from top to bottom so need to make sure that the sequence of functions are correct.  
+```c++  
+int myFunction(int x, int y) {
+  return x + y;
+}
+
+int main() {
+  cout << myFunction(5, 3);
+  return 0;
+}
+
+// Outputs 8 (5 + 3)  
+```  
+You can also pass by reference so that the inputs can be altered:  
+```c++  
+void swapNums(int &x, int &y) {
+  int z = x;
+  x = y;
+  y = z;
+}
+
+int main() {
+  int firstNum = 10;
+  int secondNum = 20;
+
+  cout << "Before swap: " << "\n";
+  cout << firstNum << secondNum << "\n";
+
+  // Call the function, which will change the values of firstNum and secondNum
+  swapNums(firstNum, secondNum);
+
+  cout << "After swap: " << "\n";
+  cout << firstNum << secondNum << "\n";
+
+  return 0;
+}  
+```  
+
 
 
