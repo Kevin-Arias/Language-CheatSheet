@@ -871,5 +871,6 @@ string* mystring; // Preferred
 string *mystring;
 string * mystring;
 ```  
-**Methods and Classes**
+### Methods and Classes  
+
 
