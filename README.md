@@ -729,10 +729,30 @@ In C++, there are different **types** of variables including:
 ```c++  
 int myNum = 5;               // Integer (whole number without decimals)
 double myFloatNum = 5.99;    // Floating point number (with decimals)
+float myFloatNum = 5.99;     // Floating point number
 char myLetter = 'D';         // Character
 string myText = "Hello";     // String (text)
 bool myBoolean = true;       // Boolean (true or false)
 ```  
+Always declare the variable as **constant** when you have values that are unlikley to change.  
+```c++  
+const int myNum = 15;  // myNum will always be 15
+myNum = 10;  // error: assignment of read-only variable 'myNum'
+const int minutesPerHour = 60;
+const float PI = 3.14;
+```  
+**USER INPUT** In order to get user input we need to take advantage of the `cin` function:  
+```c++
+int x, y;
+int sum;
+cout << "Type a number: ";
+cin >> x;
+cout << "Type another number: ";
+cin >> y;
+sum = x + y;
+cout << "Sum is: " << sum;
+```  
+
 
 
 
