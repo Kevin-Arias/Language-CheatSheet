@@ -15,7 +15,8 @@ These are some basic tips and concepts to refresh your memory on some of softwar
 
 ## C++  
 - [Basic C++](#basic-c) : Learn basic C++ concepts and syntax
-- [Loops and Conditions](#loops-and-conditions) : : Learn for and while loops, if/else statements, etc.
+- [Loops and Conditions](#loops-and-conditions) : Learn for and while loops, if/else statements, etc.
+- [Methods and Classes](#methods-and-classes) : Learn how to create methods and classes and objects.
 
 ### Basic Python
 All python files are saved ending in .py 
@@ -781,18 +782,94 @@ cout << log(2);
 ```  
 
 ### Loops and Conditions
+**If/Else/Else If Conditional Statements**  
+```c++  
+int time = 22;
+if (time < 10) {
+  cout << "Good morning.";
+} else if (time < 20) {
+  cout << "Good day.";
+} else {
+  cout << "Good evening.";
+}
+// Outputs "Good evening."
 
+//variable = (condition) ? expressionTrue : expressionFalse;
+int time = 20;
+string result = (time < 18) ? "Good day." : "Good evening.";
+cout << result;
+```  
 
+** Switch Statements ** : Switch expression is evaluated once, then value is compared with each case. If match then case code is executed.  
+```c++  
+int day = 4;
+switch (day) {
+  case 6:
+    cout << "Today is Saturday";
+    break;
+  case 7:
+    cout << "Today is Sunday";
+    break;
+  default:
+    cout << "Looking forward to the Weekend";
+}
+// Outputs "Looking forward to the Weekend"
+```  
+**While Loop**
+```c++ 
+int i = 0;
+while (i < 5) {
+  cout << i << "\n";
+  i++;
+}
+```  
+**For Loop**  
+```c++  
+for (int i = 0; i < 5; i++) {
+  cout << i << "\n";
+}
+```  
+**REFERENCES AND POINTERS**  
+A reference variable is a "reference" to an existing variable, and is created with the `&` operator. It can also be used to get the memory address of a variable:  
+```c++
+string food = "Pizza";
+string &meal = food;
 
+cout << food << "\n";  // Outputs Pizza
+cout << meal << "\n";  // Outputs Pizza
+cout << &food; // Outputs 0x6dfed4
 
+```  
+A pointer is a variable that stores the memory address as its value.  
+```c++  
+string food = "Pizza";  // A food variable of type string
+string* ptr = &food;    // A pointer variable, with the name ptr, that stores the address of food
 
+// Output the value of food (Pizza)
+cout << food << "\n";
 
+// Output the memory address of food (0x6dfed4)
+cout << &food << "\n";
 
+// Output the memory address of food with the pointer (0x6dfed4)
+cout << ptr << "\n";  
 
+// Dereference: Output the value of food with the pointer (Pizza)
+cout << *ptr << "\n";
 
+// Change the value of the pointer
+*ptr = "Hamburger";
 
+// Output the new value of the pointer (Hamburger)
+cout << *ptr << "\n";
 
+// Output the new value of the food variable (Hamburger)
+cout << food << "\n";
 
-
-
+//There are various ways to declare a pointer variable:
+string* mystring; // Preferred
+string *mystring;
+string * mystring;
+```  
+**Methods and Classes**
 
