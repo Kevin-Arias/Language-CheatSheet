@@ -726,6 +726,8 @@ In C++, there are different **types** of variables including:
 - `char` - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
 - `string` - stores text, such as "Hello World". String values are surrounded by double quotes
 - `bool` - stores values with two states: true or false  
+<img width="811" alt="c_types" src="https://user-images.githubusercontent.com/16792195/75122859-dfcaaf80-5656-11ea-996b-0a0ec87d550f.png">
+
 ```c++  
 int myNum = 5;               // Integer (whole number without decimals)
 double myFloatNum = 5.99;    // Floating point number (with decimals)
