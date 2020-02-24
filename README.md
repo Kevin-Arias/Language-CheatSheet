@@ -909,6 +909,75 @@ int main() {
   return 0;
 }  
 ```  
+**Classes and OOP**  
+```c++  
+class Car {        // The class
+  public:          // Access specifier
+    string brand;  // Attribute
+    string model;  // Attribute
+    int year;      // Attribute
+    Car(string x, string y, int z) { // Constructor with parameters
+      brand = x;
+      model = y;
+      year = z;
+    }
+    void myMethod() {  // Method/function defined inside the class
+      cout << "Hello World!";
+    }
+};
+
+int main() {
+  // Create Car objects and call the constructor with different values
+  Car carObj1("BMW", "X5", 1999);
+  Car carObj2("Ford", "Mustang", 1969);
+
+  // Print values
+  cout << carObj1.brand << " " << carObj1.model << " " << carObj1.year << "\n";
+  cout << carObj2.brand << " " << carObj2.model << " " << carObj2.year << "\n";
+  return 0;
+}  
+```  
+Public and private access specifiers allow you to access and not access certain attributes. By **default** if otherwise not specified, all members of a class are private.  
+
+```c++  
+class MyClass {
+  public:    // Public access specifier
+    int x;   // Public attribute
+  private:   // Private access specifier
+    int y;   // Private attribute
+};
+
+int main() {
+  MyClass myObj;
+  myObj.x = 25;  // Allowed (public)
+  myObj.y = 50;  // Not allowed (private)
+  return 0;
+}
+```  
+Just like every other one of these languages, we can perform inheritance:  
+```c++  
+// Base class (parent)
+class MyClass {
+  public:
+    void myFunction() {
+      cout << "Some content in parent class." ;
+    }
+};
+
+// Derived class (child)
+class MyChild: public MyClass {
+};
+
+// Derived class (grandchild)
+class MyGrandChild: public MyChild {
+};
+
+int main() {
+  MyGrandChild myObj;
+  myObj.myFunction();
+  return 0;
+}  
+```  
 
 
 
