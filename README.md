@@ -754,6 +754,34 @@ cin >> y;
 sum = x + y;
 cout << "Sum is: " << sum;
 ```  
+`cin` considers a space as a terminating character so it can only input and display a single word. In these cases we would need to use the getlin() function to read a line of text:  
+```c++  
+string fullName;
+cout << "Type your full name: ";
+getline (cin, fullName);
+cout << "Your name is: " << fullName;
+
+// Type your full name: John Doe
+// Your name is: John Doe  
+```  
+
+**LOGICAL OPERATORS**
+
+<img width="712" alt="andorc" src="https://user-images.githubusercontent.com/16792195/75128987-bec88580-567b-11ea-9463-4fa97918a500.png"><br/>  
+
+**MATH** In order to use certain math functions we need to include a header:  
+```c++  
+// Include the cmath library
+#include <cmath>
+
+cout << sqrt(64);
+cout << round(2.6);
+cout << log(2);
+```  
+
+
+
+
 
 
 
