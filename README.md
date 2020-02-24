@@ -15,6 +15,7 @@ These are some basic tips and concepts to refresh your memory on some of softwar
 
 ## C++  
 - [Basic C++](#basic-c) : Learn basic C++ concepts and syntax
+- [Loops and Conditions](#loops-and-conditions) : : Learn for and while loops, if/else statements, etc.
 
 ### Basic Python
 All python files are saved ending in .py 
@@ -778,6 +779,8 @@ cout << sqrt(64);
 cout << round(2.6);
 cout << log(2);
 ```  
+
+### Loops and Conditions
 
 
 
