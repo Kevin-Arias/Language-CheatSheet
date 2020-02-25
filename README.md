@@ -985,7 +985,9 @@ int main() {
 - Stores data elements based on sequential, mostcommonly 0 based, index.
 - Based on tuples 
 - One of the most commonly used data structures  
+
 **What You Need to Know**  
+
 - Optimal for indexing
 - Bad for searching, inserting, and deleting (except if it at end)
 - If dynamic, good for appending at end
