@@ -995,7 +995,15 @@ int main() {
     - Are static in size, meaning that they are declared with a fixed size.
 - Dynamic arrays are like one dimensional arrays, but have reserved space for additional elements.
     - If a dynamic array is full, it copies its contents to a larger array.
-- Multi dimensional arrays nested arrays that allow for multiple dimensions such as an array of arrays providing a 2 dimensional spacial representation via x, y coordinates.
+- Multi dimensional arrays nested arrays that allow for multiple dimensions such as an array of arrays providing a 2 dimensional spacial representation via x, y coordinates.  
+
+Action | Static Array | Dynamic Array
+--- | --- | ---
+Access | O(1) | O(1)
+Search | O(n) | O(n)
+Insertion | N/A | O(n)
+Appending | N/A | O(1)
+Deletion | N/A | O(n)
 
 
 
