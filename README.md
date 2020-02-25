@@ -980,6 +980,20 @@ int main() {
 ```  
 
 ## DATA STRUCTURES  
+### Arrays  
+**Definition**  
+- Stores data elements based on sequential, mostcommonly 0 based, index.
+- Based on tuples 
+- One of the most commonly used data structures  
+**What You Need to Know**  
+- Optimal for indexing
+- Bad for searching, inserting, and deleting (except if it at end)
+- If dynamic, good for appending at end
+- Linear arrays, or one dimensional arrays, are the most basic.
+    - Are static in size, meaning that they are declared with a fixed size.
+- Dynamic arrays are like one dimensional arrays, but have reserved space for additional elements.
+    - If a dynamic array is full, it copies its contents to a larger array.
+- Multi dimensional arrays nested arrays that allow for multiple dimensions such as an array of arrays providing a 2 dimensional spacial representation via x, y coordinates.
 
 
 
