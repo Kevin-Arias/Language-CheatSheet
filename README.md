@@ -1042,7 +1042,40 @@ int[][] arr = new int[10][20]
 ArrayList<Integer> arrL = new ArrayList<Integer>();
 ```  
 
-**Methods**
+**Methods**  
+
+Array:  
+
+Operation | Example 
+--- | --- 
+Index | l[i] 
+Store | l[i] = 0
+Length | l.length
+Sort | Arrays.sort(l)
+Find Index of Element | Arrays.binarySeach(l,element)
+Copy | Arrays.copyOf(l, l.length)
+Equal | Arrays.equals(l1, l2)  
+
+ArrayList:  
+
+Operation | Example | Runtime
+--- | --- | ---
+Add | l.add(element) or l.add(i, element) | O(1) if adding to end
+Clear | l.clear() | 
+Contains | l.contains(element) | O(n)
+For Each | l.forEach((n)->System.out.println(n)) | O(n)
+Get | l.get(i) | O(1)
+Index Of | l.indexOf(element) | 
+Empty | l.isEmpty() | 
+Remove | l.remove(i) or l.remove(element) | O(n)
+Replace | l.set(i, element) | 
+Size | l.size() | 
+Sort | Collections.sort(l) | 
+
+
+
+ 
+
       
 
 
