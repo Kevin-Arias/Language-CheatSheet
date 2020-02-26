@@ -1003,8 +1003,47 @@ Access | O(1) | O(1)
 Search | O(n) | O(n)
 Insertion | N/A | O(n)
 Appending | N/A | O(1)
-Deletion | N/A | O(n)
+Deletion | N/A | O(n)  
 
+### Python Array Implementations  
+In Python, I lists and arrays are pretty similar in functionality. Lists can hold different types whereas arrays can hold only one type, so I would say to just use lists instead. Lists can also mutate all values at once such as multiplication.
+**Implementation**  
+```python  
+l = [1,2,3,"Test", True, 'b', 10.25]  
+
+# Multi-Dimensional Lists
+l = [[1,2],[True, 'b'], [3,4]]
+```  
+**Methods**  
+
+Operation | Example 
+--- | --- 
+Index | l[i] 
+Store | l[i] = 0
+Length | len(l)
+Append | l.append(5) 
+Pop | l.pop() or l.pop(i)  
+Slice | l[a:b] 
+Delete | del l[i]
+Remove | l.remove(item)
+Reverse | l.reverse()
+Sort | l.sort()
+Multiply | k * l  
+
+### Java Array Implementation
+
+In java, there are Arrays and ArrayLists. Arrays are static whereas as ArrayLists are dynamic and allow for resizing. Most of the time I would prefer to use ArrayLists if there is no definite amount of elements we need to use.  
+
+**Implementation**  
+```java  
+int[] arr = new int[10] 
+int[][] arr = new int[10][20]
+
+ArrayList<Integer> arrL = new ArrayList<Integer>();
+```  
+
+**Methods**
+      
 
 
 
