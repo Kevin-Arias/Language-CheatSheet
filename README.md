@@ -1104,13 +1104,30 @@ v.insert(iterator, value) | Insert value at the position indexed by iterator.   
 v.pop_back()    |           Remove value from end.                                          | O(1)
 v.assign(begin, end) |      Clear the container and copy in the elements from begin to end. | O(n)
 v.erase(iterator)   |       Erase value indexed by iterator.                                | O(n)
-v.erase(begin, end)  |      Erase the elements from begin to end.                           | O(n)
+v.erase(begin, end)  |      Erase the elements from begin to end.                           | O(n)   
 
 
+### Linked Lists  
 
- 
+**Definition**  
+- Stores data with nodes that point to other nodes.  
+    - Nodes, at its most basic holds one data element and one reference to another node.
+    - A linked list chains nodes together by pointing one node's reference towards another node.  
 
-      
+**What You Need to Know**  
+- Designed to optimize insertion and deletion.
+- Slow at indexing and searching
+- Doubly Linked List has nodes that also reference the previous node.
+- Circularly Linked List is linked list whose tail, references to the head.  
+
+Action | Singly Linked | Doubly Linked
+--- | --- | ---
+Search | O(n) | O(n)
+Insert at Head | O(1) | O(1)
+Insert at Tail | O(1) | O(1)
+Remove at Head | O(1) | O(1)
+Remove at Tail | O(n) | O(1)
+Remove in Middle | O(n) | O(n)  
 
 
 
