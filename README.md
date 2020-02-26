@@ -1070,7 +1070,41 @@ Empty | l.isEmpty() |
 Remove | l.remove(i) or l.remove(element) | O(n)
 Replace | l.set(i, element) | 
 Size | l.size() | 
-Sort | Collections.sort(l) | 
+Sort | Collections.sort(l) |     
+
+
+### C Array Implementation  
+
+In C++, arrays do exist but I think people tend to use vectors more since they are more dynamic and allow for easy appending and removing of elements.  
+
+**Implementation**  
+```c++  
+vector<int> g1;
+for (int i = 1; i <= 5; i++) 
+	g1.push_back(i);
+	
+vector<int> v(n, element)  //Make vector with n elements that are the same  
+```  
+
+**Methods**  
+
+Operation | Definition | Runtime
+--- | --- | ---
+v[i] |         Return (or set) the I'th element.        |                O(1)
+v.at(i) |      Return (or set) the I'th element, with bounds checking. | O(1)
+v.size() |     Return current number of elements.                      | O(1)
+v.empty() |    Return true if vector is empty.                         | O(1)
+v.begin()  |   Return random access iterator to start.                 | O(1)
+v.end() |      Return random access iterator to end.                   | O(1)
+v.front() |    Return the first element.                               | O(1)
+v.back()  |    Return the last element.                                | O(1)
+v.capacity() | Return maximum number of elements.                      | O(1)
+v.push_back(value) |        Add value to end.                                             |   O(1) (amortized)
+v.insert(iterator, value) | Insert value at the position indexed by iterator.              |  O(n)
+v.pop_back()    |           Remove value from end.                                          | O(1)
+v.assign(begin, end) |      Clear the container and copy in the elements from begin to end. | O(n)
+v.erase(iterator)   |       Erase value indexed by iterator.                                | O(n)
+v.erase(begin, end)  |      Erase the elements from begin to end.                           | O(n)
 
 
 
