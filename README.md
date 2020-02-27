@@ -1344,7 +1344,65 @@ Popping | O(1)
 Peeking | O(1) 
 Searching | O(n)
 Size | O(1) 
+Empty | O(1)  
+
+**Python Stack Implementation**  
+There are a couple of ways to implement a stack in python but the best way is probably the simplest way by using something we are already familiar with: lists. 
+
+```python  
+stack = [] 
   
+# append() function to push 
+# element in the stack 
+stack.append('a') 
+stack.append('b') 
+stack.append('c') 
+
+  
+print('Initial stack') 
+print(stack) 
+  
+# pop() fucntion to pop 
+# element from stack in  
+# LIFO order 
+print('\nElements poped from stack:') 
+print(stack.pop()) 
+print(stack.pop()) 
+print(stack.pop()) 
+  
+print('\nStack after elements are popped:') 
+if not stack:
+	print("EMPTY")
+print(len(stack)) 
+```  
+
+### Java Stack Implementation
+  
+For Java, there is already a stack implementation so we just use that. Have to make sure to import java.util.*  
+
+```java  
+import java.util.*;
+
+Stack<Integer> stack = new Stack<Integer>();
+
+// Push Element onto stack  
+stack.push(1);
+
+// Pop element from stack
+int top = stack.pop();
+
+// Peek at top element
+stack.peek();
+
+// Search the stack
+int index = stack.search(1);
+
+// Returns true if empty
+stack.empty();
+
+// Returns size of stack
+stack.size();
+```  
 
 
 
