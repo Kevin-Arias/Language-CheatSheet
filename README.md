@@ -1324,6 +1324,28 @@ public:
 };
 ```  
 
+### Stacks  
+
+**Definition**  
+- Linear data structure that stores items in a Last-In First-Out.  
+- A new element is added at one end and an element is removed from that end only.
+    
+
+**What You Need to Know**  
+- Designed to optimize insertion and deletion.
+- Slow at indexing and searching
+- Does not offer constant time access to ith element.
+- Does allow constant time adds and removes because it doesn't require shifting elements around.
+
+Action | Stack Runtime
+--- | --- 
+Pushing | O(1) 
+Popping | O(1)
+Peeking | O(1) 
+Searching | O(n)
+Size | O(1) 
+  
+
 
 
 	
