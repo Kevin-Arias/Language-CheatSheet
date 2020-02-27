@@ -1129,5 +1129,126 @@ Remove at Head | O(1) | O(1)
 Remove at Tail | O(n) | O(1)
 Remove in Middle | O(n) | O(n)  
 
+### Pyhton Linked List Implementation  
+We will be covering how to implement both singly and doubly linked lists and how to implement adding and removing elements since they are the most used methods for Linked Lists.  
 
+```python  
+# Singly Linked List  
+class Node(object):
+	"""docstring for Node"""
+	def __init__(self, data = None):
+		self.data = data
+		self.next_node = None
+
+
+class LinkedList(object):
+	"""docstring for LinkedList"""
+	def __init__(self, head = None, tail = None):
+		self.head = head
+		self.tail = tail
+
+	def add(self, data):
+		temp = Node(data)
+		if (self.head == None):
+			self.head = temp
+			self.tail = temp
+		else:
+			self.tail.next_node = temp
+			self.tail = self.tail.next_node
+
+	def pop(self):
+		if (self.head == None):
+			return
+		elif self.head.next_node == None:
+			self.head = None;
+		else:
+			prev = self.head
+			current = prev.next_node
+			while current.next_node != None:
+				prev = current
+				current = current.next_node
+			self.tail = prev
+			self.tail.next_node = None
+			
+
+
+	def print_vals(self):
+		current = self.head
+		if current == None:
+			print("No Values in Linkede List yet")
+			return
+		while current.next_node != None:
+			print(current.data)
+			current = current.next_node
+
+		print(current.data)  
+		
+```  
+
+### Java Linked List Implementation  
+```java
+// Singly Linked List 
+
+public class LinkedList {
+	Node head;
+	Node tail;
+	public LinkedList() {
+		head = null;
+		tail = null;
+	}
+	public void add(int value) {
+		Node temp = new Node(value);
+		if (head == null) {
+			head = temp;
+			tail = temp;
+		} else {
+			tail.next = temp;
+			tail = tail.next;
+		}
+	}
+	public void pop() {
+		if (head == null) {
+			return;
+		}
+		else if (head.next == null){
+			head = null;
+			return;
+		} else {
+			Node prev = head;
+			Node current = prev.next;
+			while (current.next != null) {
+				prev = current;
+				current = current.next;
+			}
+			tail = prev;
+			tail.next = null;
+		}
+	}
+	public void print_vals() {
+		if (head == null) {
+			return;
+		}
+		Node current = head;
+		while (current.next != null) {
+			System.out.println(current.data);
+			current = current.next;
+		}
+		System.out.println(current.data);
+	}
+	public static void main(String[] args) {
+		
+	}
+}
+
+class Node {
+	int data;
+	Node next;
+	public Node(int value) {
+		data = value;
+		next = null;
+	}
+}
+```  
+
+	
 
