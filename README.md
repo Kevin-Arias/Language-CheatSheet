@@ -16,7 +16,17 @@ These are some basic tips and concepts to refresh your memory on some of softwar
 ## C++  
 - [Basic C++](#basic-c) : Learn basic C++ concepts and syntax
 - [Loops and Conditions](#loops-and-conditions) : Learn for and while loops, if/else statements, etc.
-- [Methods and Classes](#methods-and-classes) : Learn how to create methods and classes and objects.
+- [Methods and Classes](#methods-and-classes) : Learn how to create methods and classes and objects.  
+
+## Data Structures  
+- [Arrays](#arrays)  
+    - [Python Array Implementations](#python-array-implementations)  
+    - [Java Array Implementation](#java-array-implementation)  
+    - [C Array Implementation](#c-array-implementation)  
+- [Linked Lists](#linked-lists)  
+    - [Python Linked List Implementation](#python-linked-list-implementation)  
+    - [Java Linked List Implementation](#java-linked-list-implementation)  
+    - [C Linked List Implementation](#c-linked-list-implementation)   
 
 ### Basic Python
 All python files are saved ending in .py 
@@ -1129,7 +1139,7 @@ Remove at Head | O(1) | O(1)
 Remove at Tail | O(n) | O(1)
 Remove in Middle | O(n) | O(n)  
 
-### Pyhton Linked List Implementation  
+### Python Linked List Implementation  
 We will be covering how to implement both singly and doubly linked lists and how to implement adding and removing elements since they are the most used methods for Linked Lists.  
 
 ```python  
