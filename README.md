@@ -1250,5 +1250,71 @@ class Node {
 }
 ```  
 
+### C Linked List Implementation  
+```c++  
+#include <iostream>
+using namespace std;
+
+struct node
+{
+	int data;
+	struct node* next;
+
+};
+
+class linked_list { 
+public:
+	node* head, *tail;
+	linked_list() {
+		head = NULL;
+		tail = NULL;
+	}
+	void add(int n) {
+		node* temp = new node;
+		temp->data = n;
+		temp->next = NULL;
+		if (head == NULL) {
+			head = temp;
+			tail = temp;
+		} else {
+			tail->next = temp;
+			tail = tail->next;
+		}
+	}
+	void pop() {
+		if (head == NULL) {
+			return;
+		}
+		else if (head->next == NULL) {
+			head = NULL;
+			return;
+		} else {
+			node* prev = head;
+			node* current = prev->next;
+			while (current->next != NULL) {
+				prev = current;
+				current = current->next;
+			}
+			tail = prev;
+			tail->next = NULL;
+		}
+	}
+	void printall() {
+		node* temp = head;
+		if (head == NULL) {
+			return;
+		} else {
+			while (temp->next != NULL) {
+				cout << temp->data << "\n";
+				temp = temp->next;
+			}
+			cout << temp->data << "\n";
+		}
+	}
+};
+```  
+
+
+
 	
 
