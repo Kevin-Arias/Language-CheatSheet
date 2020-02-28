@@ -1404,6 +1404,165 @@ stack.empty();
 stack.size();
 ```  
 
+### C Stack Implementation  
+
+For C++ there is already a stack implementation built in but you have to make sure to `#include <stack>`.  
+
+```c++  
+#include <iostream>
+#include <stack> 
+using namespace std;
+
+int main(int argc, char const *argv[])
+{
+	stack<int> s;
+	s.push(10);    // Push to stack O(1)
+	s.push(11);
+	s.push(12);
+	s.pop();       // Pop from stack O(1)
+	cout << s.size() << "\n";     // Find SIZE of stack O(1)
+	cout << s.empty() << "\n";    // Determine whether stack is empty O(1)
+	cout << s.top() << "\n";      // C++ version of peek()  O(1)
+	return 0;
+}  
+```  
+
+
+### Queues  
+
+**Definition**  
+- Linear data structure that stores items in a First-In First-Out.  
+- With a queue the least recently added item is removed first.
+    
+
+**What You Need to Know**  
+- Designed to optimize insertion and deletion.
+- Slow at indexing and searching
+- Does not offer constant time access to ith element.
+- Does allow constant time adds and removes because it doesn't require shifting elements around.
+
+Action | Queue Runtime
+--- | --- 
+Enqueue | O(1) 
+Dequeue | O(1)
+Peeking | O(1) 
+Contains | O(n)
+Removal | O(n) 
+Is Empty | O(1)  
+
+### Python Queue Implementation  
+For Python, we can do something similar to that of the stack. We can use Python's built in `list` in order to implement the queue:  
+
+```python  
+queue = [] 
+  
+# Adding elements to the queue 
+queue.append('a') 
+queue.append('b') 
+queue.append('c') 
+  
+print("Initial queue") 
+print(queue) 
+  
+# Removing elements from the queue 
+print("\nElements dequeued from queue") 
+print(queue.pop(0)) 
+print(queue.pop(0)) 
+print(queue.pop(0)) 
+  
+print("\nQueue after removing elements") 
+print(queue) 
+```  
+
+
+### Java Queue Implementation  
+```java  
+import java.util.LinkedList; 
+import java.util.Queue; 
+public class QueueExample 
+{ 
+  public static void main(String[] args) 
+  { 
+    Queue<Integer> q = new LinkedList<Integer>(); 
+  
+    // Adds elements {0, 1, 2, 3, 4} to queue 
+    for (int i=0; i<5; i++) 
+     q.add(i); 
+  
+    // Display contents of the queue. 
+    System.out.println("Elements of queue-"+q); 
+  
+    // To remove the head of queue. 
+    int removedele = q.remove(); 
+    System.out.println("removed element-" + removedele); 
+  
+    System.out.println(q); 
+  
+    // To view the head of queue 
+    int head = q.peek(); 
+    System.out.println("head of queue-" + head); 
+  
+    // Rest all methods of collection interface, 
+    // Like size and contains can be used with this 
+    // implementation. 
+    int size = q.size(); 
+    System.out.println("Size of queue-" + size); 
+    q.remove();
+    q.remove();
+    q.remove();
+    q.remove();
+    if (q.isEmpty()) {
+    	System.out.println("SUCCESS");
+    }
+  } 
+} 
+```  
+
+### C Queue Implementation  
+
+There is a built in queue implementation in C++ so we can use that for execution:  
+
+```c++  
+#include <iostream> 
+#include <queue> 
+  
+using namespace std; 
+  
+void showq(queue <int> gq) 
+{ 
+    queue <int> g = gq; 
+    while (!g.empty()) 
+    { 
+        cout << '\t' << g.front(); 
+        g.pop(); 
+    } 
+    cout << '\n'; 
+} 
+  
+int main() 
+{ 
+    queue <int> gquiz; 
+    gquiz.push(10); 
+    gquiz.push(20); 
+    gquiz.push(30); 
+  
+    cout << "The queue gquiz is : "; 
+    showq(gquiz); 
+  
+    cout << "\ngquiz.size() : " << gquiz.size(); 
+    cout << "\ngquiz.front() : " << gquiz.front(); 
+    cout << "\ngquiz.back() : " << gquiz.back(); 
+  
+    cout << "\ngquiz.pop() : "; 
+    gquiz.pop(); 
+    showq(gquiz); 
+  
+    return 0; 
+} 
+```  
+
+
+
 
 
 	
