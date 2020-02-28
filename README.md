@@ -27,6 +27,10 @@ These are some basic tips and concepts to refresh your memory on some of softwar
     - [Python Linked List Implementation](#python-linked-list-implementation)  
     - [Java Linked List Implementation](#java-linked-list-implementation)  
     - [C Linked List Implementation](#c-linked-list-implementation)   
+- [Queues](#queues)  
+    - [Python Queue Implementation](#python-queue-implementation)  
+    - [Java Queue Implementation](#java-queue-implementation)  
+    - [C Queue Implementation](#c-queue-implementation)   
 
 ### Basic Python
 All python files are saved ending in .py 
