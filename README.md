@@ -1581,7 +1581,7 @@ int main()
 - Hashes are important for associative arrays and database indexing.
 
 Action | Average Runtime | Worst Runtime
---- | --- 
+--- | --- | ---
 Insertion | O(1) | O(n)
 Deletion | O(1) | O(n)
 Search | O(1) | O(n)
