@@ -1563,7 +1563,30 @@ int main()
   
     return 0; 
 } 
-```  
+```   
+
+### Hash Tables  
+
+**Definition**  
+- Stores data with key value pairs.
+- Hash functions accept a key and return an output unique only to that specific key.
+    - This is known as hashing, which is the concept that an input and an output have a one-to-one correspondence to map information.
+    - Hash functions return a unique address in memory for that data.
+
+**What You Need to Know**  
+- Designed to optimize searching, insertion, and deletion.
+- Hash collisions are when a hash function returns the same output for two distinct inputs.
+    - All hash functions have this problem.
+    - This is often accommodated for by having the hash tables use linked list look up 
+- Hashes are important for associative arrays and database indexing.
+
+Action | Average Runtime | Worst Runtime
+--- | --- 
+Insertion | O(1) | O(n)
+Deletion | O(1) | O(n)
+Search | O(1) | O(n)
+ 
+
 
 
 
