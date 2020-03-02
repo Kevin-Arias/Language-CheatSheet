@@ -1616,7 +1616,43 @@ public class hashtable {
 
 ```  
 
-![java_hashtable](https://user-images.githubusercontent.com/16792195/75707477-cab3d900-5c73-11ea-8805-78e16e702910.png)
+![java_hashtable](https://user-images.githubusercontent.com/16792195/75707477-cab3d900-5c73-11ea-8805-78e16e702910.png)</br>  
+
+### C Hash Table Implementation  
+
+In C++, we can use an unordered_map because it is implemented using Hash Table. The average cost of search, insert, and delete from hash table are O(1).  
+
+```c++
+#include <iostream>
+#include <unordered_map>
+using namespace std;
+
+int main() {
+	unordered_map<string, double> umap;
+
+	umap["pi"] = 3.14;
+	umap["root4"] = 2.0;
+
+	umap.insert(make_pair("e", 2.718));
+
+	unordered_map<string, double>:: iterator itr; 
+
+	for (itr = umap.begin(); itr != umap.end(); itr++) 
+    { 
+        // itr works as a pointer to pair<string, double> 
+        // type itr->first stores the key part  and 
+        // itr->second stroes the value part 
+        cout << itr->first << "  " << itr->second << endl; 
+     } 
+     cout << umap.size() << "\n";
+
+     if (!umap.empty()) {
+     	cout << "SUCCESS!\n";
+     }
+     return 0;
+}
+```  
+
 
  
 
