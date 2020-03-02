@@ -35,6 +35,10 @@ These are some basic tips and concepts to refresh your memory on some of softwar
     - [Python Hash Table Implementation](#python-hash-table-implementation)
     - [Java Hash Table Implementation](#java-hash-table-implementation)  
     - [C++ Hash Table Implementation](#c-hash-table-implementation)  
+- [Sets](#sets)  
+    - [Python Set Implementation](#python-set-implementation)
+    - [Java Set Implementation](#java-set-implementation)  
+    - [C++ Set Implementation](#c-set-implementation)  
 
 ### Basic Python
 All python files are saved ending in .py 
@@ -1808,6 +1812,10 @@ int main()
   
 } 
 ```  
+<img width="618" alt="set_c" src="https://user-images.githubusercontent.com/16792195/75720877-1ffbe480-5c8c-11ea-8965-9fd170b716a7.png"></br>  
+
+
+
 
 
 
