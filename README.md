@@ -1701,6 +1701,31 @@ print(len(thisset))
 ```
 
 
+<img width="667" alt="set_python" src="https://user-images.githubusercontent.com/16792195/75718614-1cfef500-5c88-11ea-888b-0c276fc9b99e.png"> </br>  
+
+### Java Set Implementation  
+
+In java, we use the HashSet in order to satisfy all of our set needs and operations:  
+
+```java
+import java.util.*;
+
+public class set {
+	public static void main(String[] args) {
+		Set<Integer> s = new HashSet<Integer>();
+		s.add(1);
+		s.add(2);
+		if (s.contains(1)) {
+			System.out.println("Success");
+		}
+		for (int i : s) {
+			System.out.println(i);
+		}
+	}
+}
+```  
+
+
 
 
  
