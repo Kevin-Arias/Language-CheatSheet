@@ -1597,6 +1597,26 @@ d[4] = 2
 <img width="644" alt="dict" src="https://user-images.githubusercontent.com/16792195/75100465-8db85a00-5582-11ea-99fc-7e930c5bd1bd.png"><br/>  
 
 **Java Hash Table Implementation**  
+For java, we use the built-in Hashtable from java.util :  
+```java  
+import java.util.*;
+
+public class hashtable {
+
+	public static void main(String[] args) {
+		Hashtable<Integer, String> h = new Hashtable<Integer, String>();
+		
+		String s1 = "pollinating sandboxes";
+		String s2 = "amusement & hemophilias";
+		h.put(s1.hashCode(), s1);
+		h.put(s2.hashCode(), s2);
+		System.out.println(h);
+	}
+}
+
+```  
+
+![java_hashtable](https://user-images.githubusercontent.com/16792195/75707477-cab3d900-5c73-11ea-8805-78e16e702910.png)
 
  
 
