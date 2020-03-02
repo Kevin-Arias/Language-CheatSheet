@@ -22,15 +22,19 @@ These are some basic tips and concepts to refresh your memory on some of softwar
 - [Arrays](#arrays)  
     - [Python Array Implementations](#python-array-implementations)  
     - [Java Array Implementation](#java-array-implementation)  
-    - [C Array Implementation](#c-array-implementation)  
+    - [C++ Array Implementation](#c-array-implementation)  
 - [Linked Lists](#linked-lists)  
     - [Python Linked List Implementation](#python-linked-list-implementation)  
     - [Java Linked List Implementation](#java-linked-list-implementation)  
-    - [C Linked List Implementation](#c-linked-list-implementation)   
+    - [C++ Linked List Implementation](#c-linked-list-implementation)   
 - [Queues](#queues)  
     - [Python Queue Implementation](#python-queue-implementation)  
     - [Java Queue Implementation](#java-queue-implementation)  
-    - [C Queue Implementation](#c-queue-implementation)   
+    - [C++ Queue Implementation](#c-queue-implementation)   
+- [Hash Tables](#queues)  
+    - [Python Hash Table Implementation](#python-hash-table-implementation)
+    - [Java Hash Table Implementation](#java-hash-table-implementation)  
+    - [C++ Hash Table Implementation](#c-hash-table-implementation)  
 
 ### Basic Python
 All python files are saved ending in .py 
