@@ -1677,7 +1677,28 @@ Insertion | O(1)
 Deletion | O(1)
 Containment | O(1) 
 Length | O(1)  
-Union | O(1)
+Union | O(1)  
+
+### Python Set Implementation  
+
+For python, adding a set is almost no different than creating a list:  
+
+```python  
+thisset = {"apple", "banana", "cherry"}
+
+for x in thisset:
+  print(x)
+  
+print("banana" in thisset)
+
+thisset.add("orange")
+
+thisset.update(["orange", "mango", "grapes"])
+
+thisset.remove("banana")
+
+print(len(thisset))
+```
 
 
 
