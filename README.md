@@ -1658,7 +1658,26 @@ int main() {
 ```  
 
 
-<img width="404" alt="unordered_map" src="https://user-images.githubusercontent.com/16792195/75712220-75c89080-5c7c-11ea-8204-3d6128fb7066.png"> </br>  
+<img width="404" alt="unordered_map" src="https://user-images.githubusercontent.com/16792195/75712220-75c89080-5c7c-11ea-8204-3d6128fb7066.png"> </br>   
+
+### Sets  
+
+**Definition**  
+- Stores data like lists/arrays
+- Set guarantees that there is no duplicate object in it.
+
+**What You Need to Know**  
+- Designed to optimize insertion, deletion, checking size, and checking for containment
+- Since no duplicates allowed, great for unioning and only having unique values
+- Values are not ordered so not good for indexing or popping
+
+Action | Average Runtime 
+--- | --- 
+Insertion | O(1) 
+Deletion | O(1)
+Containment | O(1) 
+Length | O(1)  
+Union | O(1)
 
 
 
