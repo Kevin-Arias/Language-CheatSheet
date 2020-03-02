@@ -1590,7 +1590,7 @@ Insertion | O(1) | O(n)
 Deletion | O(1) | O(n)
 Search | O(1) | O(n)  
 
-**Python Hash Table Implementation**  
+### Python Hash Table Implementation    
 For python, the best way to keep a key-value type data structure and keep a good runtime is by using the built-in dictionary:  
 ```python  
 d = dict()
@@ -1600,7 +1600,7 @@ d[4] = 2
 ```  
 <img width="644" alt="dict" src="https://user-images.githubusercontent.com/16792195/75100465-8db85a00-5582-11ea-99fc-7e930c5bd1bd.png"><br/>  
 
-**Java Hash Table Implementation**  
+### Java Hash Table Implementation  
 For java, we use the built-in Hashtable from java.util :  
 ```java  
 import java.util.*;
