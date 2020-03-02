@@ -31,7 +31,7 @@ These are some basic tips and concepts to refresh your memory on some of softwar
     - [Python Queue Implementation](#python-queue-implementation)  
     - [Java Queue Implementation](#java-queue-implementation)  
     - [C++ Queue Implementation](#c-queue-implementation)   
-- [Hash Tables](#queues)  
+- [Hash Tables](#hash-tables)  
     - [Python Hash Table Implementation](#python-hash-table-implementation)
     - [Java Hash Table Implementation](#java-hash-table-implementation)  
     - [C++ Hash Table Implementation](#c-hash-table-implementation)  
