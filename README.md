@@ -1874,7 +1874,82 @@ root.insert(3)
 root.PrintTree()
 ```  
 
-### Java Tree Implementation
+### Java Tree Implementation  
+```java
+class BinarySearchTree {
+
+	class Node {
+		int data;
+		Node left, right;
+
+		public Node(int item) {
+			data = item;
+			left = right = null;
+		}
+	}
+
+	Node root;
+
+	BinarySearchTree() {
+		root = null;
+	}
+
+	void insert(int data) {
+		root = insertRec(root, data);
+	}
+	
+	Node insertRec(Node root, int data) {
+		/* If the tree is empty, return a new node */
+        if (root == null) { 
+            root = new Node(data); 
+            return root; 
+        } 
+  
+        /* Otherwise, recur down the tree */
+        if (data < root.data) 
+            root.left = insertRec(root.left, data); 
+        else if (data > root.data) 
+            root.right = insertRec(root.right, data); 
+  
+        /* return the (unchanged) node pointer */
+        return root; 
+	}
+
+	// A utility function to do inorder traversal of BST 
+    void inorderRec(Node root) { 
+        if (root != null) { 
+            inorderRec(root.left); 
+            System.out.println(root.data); 
+            inorderRec(root.right); 
+        } 
+    } 
+
+    public static void main(String[] args) {
+    	BinarySearchTree tree = new BinarySearchTree(); 
+  
+        /* Let us create following BST 
+              50 
+           /     \ 
+          30      70 
+         /  \    /  \ 
+       20   40  60   80 */
+        tree.insert(50); 
+        tree.insert(30); 
+        tree.insert(20); 
+        tree.insert(40); 
+        tree.insert(70); 
+        tree.insert(60); 
+        tree.insert(80); 
+  
+        // print inorder traversal of the BST 
+        tree.inorderRec(tree.root); 
+    }
+}
+```  
+
+### C Tree Implementation
+```c++
+```
 
 
  
