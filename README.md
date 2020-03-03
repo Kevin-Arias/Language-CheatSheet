@@ -1814,8 +1814,25 @@ int main()
 ```  
 <img width="618" alt="set_c" src="https://user-images.githubusercontent.com/16792195/75720877-1ffbe480-5c8c-11ea-8965-9fd170b716a7.png"></br>  
 
+### Trees  
+
+**Definition**  
+- Undirected graph which satisfies the following definitions:
+    - An acyclic connected graph
+    - A connected graph with N nodes and N-1 edges
+    - A graph in which any two vertices are connected by exactly **one** path
+
+**What You Need to Know**  
+- **Binary Tree** is a tree with no more than two children per node
+- **Binary Search Tree** is a binary tree that has all left subtrees hold smaller values than root node and all right subtrees hold 
 
 
+Action | Average Runtime | Worst Runtime
+--- | --- | ---
+Insertion | O(log(n)) | O(n)
+Delete | O(log(n)) | O(n)
+Remove | O(log(n)) | O(n)
+Search | O(log(n)) | O(n)
 
 
 
