@@ -1949,7 +1949,76 @@ class BinarySearchTree {
 
 ### C Tree Implementation
 ```c++
-```
+#include <iostream>
+using namespace std;
+
+class BST {
+	class Node
+	{
+	public:
+		int data;
+		Node* left;
+		Node* right;
+		Node(int value) {
+			data = value;
+			left = right = NULL;
+		}
+		
+	};
+	public:
+		Node* root;
+		BST() {
+			root = NULL;
+		}
+		void insert(int data) {
+			root = insertRec(root, data);
+		}
+		Node* insertRec(Node* root, int data) {
+			if (root == NULL) {
+				root = new Node(data);
+			}
+
+			if (data < root->data) {
+				root->left = insertRec(root->left, data);
+			}
+			else if (data > root->data) {
+				root->right = insertRec(root->right, data);
+			}
+			return root;
+		}
+		void inorderRec(Node* root) {
+			if (root != NULL) {
+				inorderRec(root->left);
+				cout << root->data << "\n";
+				inorderRec(root->right);
+			}
+		}
+
+};
+int main(int argc, char const *argv[])
+{
+	BST tree;
+
+	/* Let us create following BST 
+          50 
+       /     \ 
+      30      70 
+     /  \    /  \ 
+   20   40  60   80 */
+    tree.insert(50); 
+    tree.insert(30); 
+    tree.insert(20); 
+    tree.insert(40); 
+    tree.insert(70); 
+    tree.insert(60); 
+    tree.insert(80); 
+
+    // print inorder traversal of the BST 
+    tree.inorderRec(tree.root);
+	return 0;
+}
+```  
+
 
 
  
