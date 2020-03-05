@@ -43,6 +43,8 @@ These are some basic tips and concepts to refresh your memory on some of softwar
     - [Python Tree Implementation](#python-tree-implementation)
     - [Java Tree Implementation](#java-tree-implementation)  
     - [C++ Tree Implementation](#c-tree-implementation)  
+    
+## Algorithms
 
 ### Basic Python
 All python files are saved ending in .py 
