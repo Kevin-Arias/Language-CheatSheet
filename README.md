@@ -2025,6 +2025,117 @@ int main(int argc, char const *argv[])
 }
 ```  
 
+## Algorithms  
+
+## Divide and Conquer Algorithms  
+
+### <a id="selection-sort"></a>Selection Sort
+#### Definition
+- A comparison based sorting algorithm.
+  - Starts with the cursor on the left, iterating left to right
+  - Compares the left side to the right, looking for the smallest known item
+    - If the left is smaller than the item to the right it continues iterating
+    - If the left is bigger than the item to the right, the item on the right becomes the known smallest number
+    - Once it has checked all items, it moves the known smallest to the cursor and advances the cursor to the right and starts over
+  - As the algorithm processes the data set, it builds a fully sorted left side of the data until the entire data set is sorted
+- Changes the array in place.
+
+#### What you need to know
+- Inefficient for large data sets.
+- Very simple to implement.
+
+#### Time Complexity
+- Best Case Sort: Merge Sort: `O(n^2)`
+- Average Case Sort: Merge Sort: `O(n^2)`
+- Worst Case Sort: Merge Sort: `O(n^2)`
+
+#### Space Complexity
+- Worst Case: `O(1)`
+
+#### Visualization
+![#](https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif)
+
+[(source: Wikipedia, _Insertion Sort_)](https://en.wikipedia.org/wiki/Selection_sort)
+
+### <a id="insertion-sort"></a>Insertion Sort
+#### Definition
+- A comparison based sorting algorithm.
+  - Iterates left to right comparing the current cursor to the previous item.
+  - If the cursor is smaller than the item on the left it swaps positions and the cursor compares itself again to the left hand side until it is put in its sorted position.
+  - As the algorithm processes the data set, the left side becomes increasingly sorted until it is fully sorted.
+- Changes the array in place.
+
+#### What you need to know
+- Inefficient for large data sets, but can be faster for than other algorithms for small ones.
+- Although it has an `O(n^2)`, in practice it slightly less since its comparison scheme only requires checking place if its smaller than its neighbor.
+
+#### Time Complexity
+- Best Case Sort: Merge Sort: `O(n)`
+- Average Case Sort: Merge Sort: `O(n^2)`
+- Worst Case Sort: Merge Sort: `O(n^2)`
+
+#### Space Complexity
+- Worst Case: `O(n)`
+
+#### Visualization
+![#](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)
+
+[(source: Wikipedia, _Insertion Sort_)](https://en.wikipedia.org/wiki/Insertion_sort)
+
+### <a id="merge-sort"></a>Merge Sort
+#### Definition
+- A divide and conquer algorithm.
+  - Recursively divides entire array by half into subsets until the subset is one, the base case.
+  - Once the base case is reached results are returned and sorted ascending left to right.
+  - Recursive calls are returned and the sorts double in size until the entire array is sorted.
+
+#### What you need to know
+- This is one of the fundamental sorting algorithms.
+- Know that it divides all the data into as small possible sets then compares them.
+
+#### Time Complexity
+- Worst Case: `O(n log n)`
+- Average Case: `O(n log n)`
+- Best Case: `O(n)`
+
+#### Space Complexity
+- Worst Case: `O(1)`
+
+#### Visualization
+![#](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Merge_sort_algorithm_diagram.svg/400px-Merge_sort_algorithm_diagram.svg.png)
+
+[(source: Wikipedia, _Merge Sort_)](https://en.wikipedia.org/wiki/Merge_sort)
+
+### <a id="quick-sort"></a>Quicksort
+#### Definition
+- A divide and conquer algorithm
+  - Partitions entire data set in half by selecting a random pivot element and putting all smaller elements to the left of the element and larger ones to the right.
+  - It repeats this process on the left side until it is comparing only two elements at which point the left side is sorted.
+  - When the left side is finished sorting it performs the same operation on the right side.
+- Computer architecture favors the quicksort process.
+- Changes the array in place.
+
+#### What you need to know
+- While it has the same Big O as (or worse in some cases) many other sorting algorithms it is often faster in practice than many other sorting algorithms, such as merge sort.
+
+#### Time Complexity
+- Worst Case: `O(n^2)`
+- Average Case: `O(n log n)`
+- Best Case: `O(n log n)`
+
+#### Space Complexity
+- Worst Case: `O(log n)`
+
+#### Visualization
+![#](https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif)
+
+[(source: Wikipedia, _Quicksort_)](https://en.wikipedia.org/wiki/Quicksort)
+
+#### Merge Sort Vs. Quicksort
+- Quicksort is likely faster in practice, but merge sort is faster on paper.
+- Merge Sort divides the set into the smallest possible groups immediately then reconstructs the incrementally as it sorts the groupings.
+- Quicksort continually partitions the data set by a pivot, until the set is recursively sorted.
+
 
 
  
