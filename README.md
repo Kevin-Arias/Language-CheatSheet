@@ -2134,7 +2134,12 @@ int main(int argc, char const *argv[])
 #### Merge Sort Vs. Quicksort
 - Quicksort is likely faster in practice, but merge sort is faster on paper.
 - Merge Sort divides the set into the smallest possible groups immediately then reconstructs the incrementally as it sorts the groupings.
-- Quicksort continually partitions the data set by a pivot, until the set is recursively sorted.
+- Quicksort continually partitions the data set by a pivot, until the set is recursively sorted.  
+
+#### Binary Search  
+- Binary Search allows us to find a key *k* in a large file containing keys *z*[0,1,...,n-1] in sorted order, we first compare k with *z*[n/2], and depending on the result we recurse either on the first half of the file *z*[0,..., n/2-1], or on the second half *z*[n/2,...,n-1]
+- The runtime of this algorithm is O(log n)
+
 
 
 
