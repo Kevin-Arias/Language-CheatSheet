@@ -2138,7 +2138,12 @@ int main(int argc, char const *argv[])
 
 #### Binary Search  
 - Binary Search allows us to find a key *k* in a large file containing keys *z*[0,1,...,n-1] in sorted order, we first compare k with *z*[n/2], and depending on the result we recurse either on the first half of the file *z*[0,..., n/2-1], or on the second half *z*[n/2,...,n-1]
-- The runtime of this algorithm is O(log n)
+- The runtime of this algorithm is O(log n)  
+
+#### Medians  
+- The median of a list of numbers is its 50th percentile.
+- Sorting values and then finding the median takes O(n log n) time and that is just too slow.
+- We can use the Selection algorithm to find the k largest item where k is size/2
 
 
 
