@@ -39,6 +39,10 @@ These are some basic tips and concepts to refresh your memory on some of softwar
     - [Python Set Implementation](#python-set-implementation)
     - [Java Set Implementation](#java-set-implementation)  
     - [C++ Set Implementation](#c-set-implementation)  
+- [Trees](#trees)  
+    - [Python Tree Implementation](#python-tree-implementation)
+    - [Java Tree Implementation](#java-tree-implementation)  
+    - [C++ Tree Implementation](#c-tree-implementation)  
 
 ### Basic Python
 All python files are saved ending in .py 
