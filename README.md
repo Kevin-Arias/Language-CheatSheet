@@ -2145,6 +2145,11 @@ int main(int argc, char const *argv[])
 - Sorting values and then finding the median takes O(n log n) time and that is just too slow.
 - We can use the Selection algorithm to find the k largest item where k is size/2
 
+<img width="804" alt="median" src="https://user-images.githubusercontent.com/16792195/76030757-2dfb7080-5eeb-11ea-8401-e62251b5366b.png"> </br>  
+
+
+
+
 
 
 
