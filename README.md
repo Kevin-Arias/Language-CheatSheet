@@ -2147,6 +2147,21 @@ int main(int argc, char const *argv[])
 
 <img width="804" alt="median" src="https://user-images.githubusercontent.com/16792195/76030757-2dfb7080-5eeb-11ea-8401-e62251b5366b.png"> </br>  
 
+## Graphs  
+- Graph is a data structure that consists of the following:  
+    - A finite set of vertices
+    - A finite set of ordered pairs of the form (u,v) called an edge.
+- Graphs are used to represent many real-life apllications such as networks
+- There are a few ways of representing graphs but the two most commonly used are adjacency lists and adjacency matrix:
+    - Adjacency Matrix Pros and Cons:
+    - Representation is easier to implement and follow, removing an edge takes constant time, and determining whether two vertices are connected or not takes constant time. But it consumes more space.
+    - Adjacency List Pros and Cons:
+    - It saves space but determing whether two vertices are connected or not can take longer in comparison.  
+
+### Python Graph Implementation  
+```python  
+```
+
 
 
 
