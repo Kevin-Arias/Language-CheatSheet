@@ -2159,6 +2159,7 @@ int main(int argc, char const *argv[])
     - It saves space but determing whether two vertices are connected or not can take longer in comparison.  
 
 ### Python Graph Implementation  
+For python, I believe the best implementation is to use a dictionary and have the key be all of the vertices and the values for each key can be the vertices that key connects to.
 ```python  
 ```
 
