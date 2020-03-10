@@ -2159,8 +2159,113 @@ int main(int argc, char const *argv[])
     - It saves space but determing whether two vertices are connected or not can take longer in comparison.  
 
 ### Python Graph Implementation  
-For python, I believe the best implementation is to use a dictionary and have the key be all of the vertices and the values for each key can be the vertices that key connects to.
+
 ```python  
+def add_vertex(v):
+	global graph
+	global size
+	if v in graph:
+		print(v + " already exists")
+	else:
+		size += 1
+		graph[v] = []
+
+def add_edge(v1, v2, e):
+	global graph
+
+	if v1 not in graph:
+		print(v1 + " not in graph")
+	elif v2 not in graph:
+		print(v2 + " not in graph")
+	else:
+		temp = [v2, e]
+		graph[v1].append(temp)
+
+def print_graph():
+	global graph
+	for vertex in graph:
+		for edges in graph[vertex]:
+			print(vertex,"->", edges[0], "edge weight: ", edges[1])
+
+graph = dict()
+size = 0
+add_vertex(1)
+add_vertex(2)
+add_vertex(3)
+add_vertex(4)
+
+add_edge(1, 2, 1)
+add_edge(1, 3, 1)
+add_edge(2, 3, 3)
+add_edge(3, 4, 4)
+add_edge(4, 1, 5)
+print_graph()
+
+print("Internal representation: ", graph)
+```  
+
+### Java Graph Implementation  
+```java  
+import java.util.LinkedList;
+import java.util.*;
+
+public class graph {
+	class Node {
+		int next;
+		int weight;
+		public Node(int connected, int edge_weight) {
+			next = connected;
+			weight = edge_weight;
+		}
+	}
+
+	int size;
+	Hashtable<Integer, LinkedList<Node>> gr;
+
+	public graph() {
+		size = 0;
+		gr = new Hashtable<Integer, LinkedList<Node>>();
+	}
+
+	void add_vertex(int v) {
+		size += 1;
+		LinkedList<Node> temp = new LinkedList<Node>();
+		gr.put(v, temp);
+	}
+
+	void add_edge(int v1, int v2, int e) {
+		Node n = new Node(v2, e);
+		LinkedList<Node> temp = gr.get(v1);
+		temp.add(n);
+	}
+
+	void print_graph() {
+		Set<Integer> keys = gr.keySet();
+		for (int vertex : keys) {
+			for (Node n : gr.get(vertex)) {
+				
+				System.out.println(String.valueOf(vertex) + " -> " + 
+					String.valueOf(n.next) + " edge weight: " + String.valueOf(n.weight));
+			}
+		}
+	}
+	public static void main(String[] args) {
+		graph g = new graph();
+		g.add_vertex(1);
+		g.add_vertex(2);
+		g.add_vertex(3);
+		g.add_vertex(4);
+
+		g.add_edge(1, 2, 1);
+		g.add_edge(1, 3, 1);
+		g.add_edge(2, 3, 3);
+		g.add_edge(3, 4, 4);
+		g.add_edge(4, 1, 5);
+		g.print_graph();
+		
+	}
+
+}
 ```
 
 
