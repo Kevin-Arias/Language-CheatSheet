@@ -26,7 +26,11 @@ These are some basic tips and concepts to refresh your memory on some of softwar
 - [Linked Lists](#linked-lists)  
     - [Python Linked List Implementation](#python-linked-list-implementation)  
     - [Java Linked List Implementation](#java-linked-list-implementation)  
-    - [C++ Linked List Implementation](#c-linked-list-implementation)   
+    - [C++ Linked List Implementation](#c-linked-list-implementation)
+- [Stacks](#stacks)  
+    - [Python Stack Implementation](#python-stack-implementation)  
+    - [Java Stack Implementation](#java-stack-implementation)  
+    - [C++ Stack Implementation](#c-stack-implementation) 
 - [Queues](#queues)  
     - [Python Queue Implementation](#python-queue-implementation)  
     - [Java Queue Implementation](#java-queue-implementation)  
@@ -1364,7 +1368,7 @@ Searching | O(n)
 Size | O(1) 
 Empty | O(1)  
 
-**Python Stack Implementation**  
+### Python Stack Implementation  
 There are a couple of ways to implement a stack in python but the best way is probably the simplest way by using something we are already familiar with: lists. 
 
 ```python  
